@@ -2,7 +2,7 @@
 
 <i><h3>Shalin Shah</h3></i>
 <p>
-Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/wiki/Graph_coloring_problem">graph coloring</a>. The heuristic follows
+Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/wiki/Graph_coloring_problem">graph coloring</a> in Java. The heuristic follows
 the following steps:
 </p>
 <ol>	
