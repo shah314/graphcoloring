@@ -1,6 +1,8 @@
 <h1>Heuristic for Graph Coloring</h1>
 
 <i><h3>Shalin Shah</h3></i>
+
+<div align="center"><img src="threecoloring.jpg"/></div>
 <p>
 Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/wiki/Graph_coloring_problem">graph coloring</a> in Java. The heuristic follows
 the following steps:
