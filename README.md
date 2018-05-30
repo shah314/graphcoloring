@@ -30,10 +30,6 @@ Culberson J. (See <a href="http://citeseer.ist.psu.edu/culberson92iterated.html"
 
 <b>Cited By:</b><ul><li>Mirarab, Siavash, et al. "Statistical binning enables an accurate coalescent-based estimation of the avian tree." Science 346.6215 (2014): 1250463. (<a href="http://science.sciencemag.org/content/sci/suppl/2014/12/11/346.6215.1250463.DC1/1250463.Mirarab.SM.revision1.pdf">PDF</a>)</li><li>https://github.com/smirarab/binning</li><li>Ahmad Muklason, "Hyper-heuristics and Fairness in Examination Timetabling Problems"</li></ul></li>
 
-<b>Cite this code:</b>
-
-<i>"Heuristics for Graph Coloring", Shalin Shah, 2012, https://github.com/shah314/graphcoloring</i>
-
 <p>The algorithm was run on a few <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm"> benchmark instances</a> and the results are shown
 in the following table.</p>
   <table>
