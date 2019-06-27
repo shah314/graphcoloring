@@ -1,6 +1,7 @@
 <h1>Heuristic for Graph Coloring</h1>
 
 <i><h3>Shalin Shah</h3></i>
+<a href="https://zenodo.org/badge/latestdoi/134313250"><img src="https://zenodo.org/badge/134313250.svg" alt="DOI"></a>
 
 <div align="center"><img src="threecoloring.jpg"/></div>
 <p>
