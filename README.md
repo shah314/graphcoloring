@@ -3,6 +3,8 @@
 <i><h3>Shalin Shah</h3></i>
 <a href="https://zenodo.org/badge/latestdoi/134313250"><img src="https://zenodo.org/badge/134313250.svg" alt="DOI"></a>
 
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-3770-1391" href="https://orcid.org/0000-0002-3770-1391" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-3770-1391</a></div><br>
+
 <div align="center"><img src="threecoloring.jpg"/></div>
 <p>
 Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/wiki/Graph_coloring_problem">graph coloring</a> in Java. The heuristic follows
