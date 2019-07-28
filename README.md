@@ -5,8 +5,7 @@
 
 <div align="center"><img src="threecoloring.jpg"/></div>
 <p>
-Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/wiki/Graph_coloring_problem">graph coloring</a> in Java. The heuristic follows
-the following steps:
+Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/wiki/Graph_coloring_problem">graph coloring</a> in Java. The heuristic follows the following steps:
 </p>
 <ol>	
 	<li>Compute a clique (maximum is good)
@@ -23,6 +22,11 @@ the following steps:
 <p>
 Instances are available <a href="http://mat.gsia.cmu.edu/COLOR/instances.html">here</a>
 and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a>.</p>
+
+<pre>Change FILE in Constants.java to the file that contains the graph in a known format.
+Compile the code and run "java GraphColoring".
+</pre>
+
 <p>
 [1] "New methods to color the vertices of a graph", Brelaz D., CACM 22(4) pp 251--256.<br>
 [2] &quot;Iterated Greedy graph coloring and the difficulty landscape&quot;,
