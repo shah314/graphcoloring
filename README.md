@@ -23,6 +23,11 @@ Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/
 Instances are available <a href="http://mat.gsia.cmu.edu/COLOR/instances.html">here</a>
 and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a>.</p>
 
+Compile the code and then run:
+<pre>
+java GraphColoring
+</pre>
+
 <pre>Change FILE in Constants.java to the file that contains the graph in a known format.
 Compile the code and run "java GraphColoring".
 </pre>
