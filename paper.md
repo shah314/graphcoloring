@@ -23,7 +23,9 @@ bibliography: paper.bib
 
 ![Three Coloring.](threecoloring.jpg)
 
-The graph coloring problem aims at assigning colors to the nodes of a graph such that no two connected nodes have the same color. This Java code uses the DSATUR [@brelaz1979new] heuristics along with iterated greedy heuristics [@culberson1992iterated] to color a graph. It then uses min-conflicts local search to improve the coloring. The method is quite successful in finding good colorings of the majority of the publicly available data sets.
+The graph coloring problem aims at assigning colors to the nodes of a graph such that no two connected nodes have the same color. The graph coloring problem is NP-complete and one of the harder problems to solve. We present a heuristic to solve it using three cascaded algorithms. The graph coloring problem was one of Karp's 21 NP-complete problems, and is also know as the problem of finding the chromatic number of a graph. Several other problems reduce to graph coloring including solving generalized Sudoku puzzles.
+
+This Java code uses the DSATUR [@brelaz1979new] heuristics along with iterated greedy heuristics [@culberson1992iterated] to color a graph. It then uses min-conflicts local search to improve the coloring. The method is quite successful in finding good colorings of the majority of the publicly available data sets.
 
 The method uses the following steps:
 
