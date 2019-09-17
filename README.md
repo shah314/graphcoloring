@@ -28,7 +28,8 @@ Compile the code and then run:
 java GraphColoring
 </pre>
 
-<pre>Change FILE in Constants.java to the file that contains the graph in a known format.
+<pre>Change FILE in Constants.java to the file that contains the graph in a known format (defaults to 'data.col' in the current directory).
+Please remove all comments (lines starting with a 'c') and other extraneous text from the file.
 Compile the code and run "java GraphColoring".
 </pre>
 
