@@ -28,10 +28,12 @@ Compile the code and then run:
 java GraphColoring
 </pre>
 
-<pre>Change FILE in Constants.java to the file that contains the graph in a known format (defaults to 'data.col' in the current directory).
-Please remove all comments (lines starting with a 'c') and other extraneous text from the file.
-Compile the code and run "java GraphColoring".
-</pre>
+<ul>
+<li>Change FILE in Constants.java to the file that contains the graph in a known format.
+(defaults to 'data.col' in the current directory)</li>
+<li>Please remove all comments (lines starting with a 'c') and other extraneous text from the file.</li>
+<li>Compile the code and run "java GraphColoring".</li>
+</ul>
 
 <p>
 [1] "New methods to color the vertices of a graph", Brelaz D., CACM 22(4) pp 251--256.<br>
