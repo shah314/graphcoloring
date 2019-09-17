@@ -14,7 +14,7 @@ public class Constants {
      * The format is specified by the following URL:
      * http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm
      */
-    public static final String FILE = "C:\\Documents and Settings\\Shah\\Desktop\\data.col";
+    public static final String FILE = "data.col";
     
     /* The number of iterations */
     public static final int ANNEALING_ITERATIONS = 2000;
