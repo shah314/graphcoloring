@@ -2,8 +2,8 @@
 These are general guidelines on how to contribute to the code.
 <h3>Bugs and Issues</h3>
 <ul>
-<li>If, while running the code you find that it has an issue, please report it to the issues page.</li>
-<li>If you are able to fi the issue, please open a pull request with your changes to a new branch</li>
+<li>If while running the code you find that it has an issue, please report it to the issues page.</li>
+<li>If you are able to fix the issue, please open a pull request with your changes to a new branch</li>
 <li>I will carefully monitor the issues page. Please add @shah314 in the issue so I get a notification.</li>
 </ul>
 <h3>Code Enhancements</h3>
