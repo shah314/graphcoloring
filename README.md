@@ -577,11 +577,13 @@ I ran the PETSc packages <a href="https://www.mcs.anl.gov/petsc/petsc-current/do
 
 <table>
 	<tr><td><b>DataSet</b></td><td>MATCOLORINGLF</td><td>MATCOLORINGSL</td><td>MATCOLORINGID</td></tr>
-	<tr><td></td><td></td><td></td></tr>
-	<tr><td></td><td></td><td></td></tr>
-	<tr><td></td><td></td><td></td></tr>
-	<tr><td></td><td></td><td></td></tr>
-	<tr><td></td><td></td><td></td></tr>
-	<tr><td></td><td></td><td></td></tr>
-	<tr><td></td><td></td><td></td></tr>
+	<tr><td>fpsol2.i.3</td><td></td><td></td><td></td></tr>
+	<tr><td>inithx.i.3</td><td></td><td></td><td></td></tr>
+	<tr><td>le450_5d</td><td></td><td></td><td></td></tr>
+	<tr><td>mulsol.i.5</td><td></td><td></td><td></td></tr>
+	<tr><td>zeroin.i.3</td><td></td><td></td><td></td></tr>
+	<tr><td>games120</td><td></td><td></td><td></td></tr>
+	<tr><td>miles750</td><td></td><td></td><td></td></tr>
+	<tr><td>queen9_9</td><td></td><td></td><td></td></tr>
+	<tr><td>myciel7</td><td></td><td></td><td></td></tr>
 </table>
