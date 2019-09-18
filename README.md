@@ -572,3 +572,16 @@ instances </a> and the results are shown in the following table.</p>
     </tr>
   </table>
 <i>* The algorithm was terminated before local search&nbsp;</i>
+
+I ran the PETSc packages <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGLF.html">MATCOLORINGLF</a>, <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGSL.html">MATCOLORINGSL</a> and <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGID.html">MATCOLORINGID</a> on some of the publicly available data sets for comparison. The results are in the following table.
+
+<table>
+	<tr><td><b>DataSet</b></td><td>MATCOLORINGLF</td><td>MATCOLORINGSL</td><td>MATCOLORINGID</td></tr>
+	<tr><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td></tr>
+</table>
