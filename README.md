@@ -573,7 +573,7 @@ instances </a> and the results are shown in the following table.</p>
   </table>
 <i>* The algorithm was terminated before local search&nbsp;</i>
 
-I ran the PETSc packages <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGLF.html">MATCOLORINGLF</a>, <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGSL.html">MATCOLORINGSL</a>, <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGID.html">MATCOLORINGID</a> and <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGGREEDY.html">MATCOLORINGGREEDY</a> on some of the publicly available data sets for comparison. The results are in the following table.
+<br><br>I ran the PETSc packages <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGLF.html">MATCOLORINGLF</a>, <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGSL.html">MATCOLORINGSL</a>, <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGID.html">MATCOLORINGID</a> and <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGGREEDY.html">MATCOLORINGGREEDY</a> on some of the publicly available data sets for comparison. The results are in the following table.
 
 <table>
 	<tr><td><b>DataSet</b></td><td>MATCOLORINGLF</td><td>MATCOLORINGSL</td><td>MATCOLORINGID</td><td>MATCOLORINGGREEDY</td></tr>
