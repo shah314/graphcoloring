@@ -573,17 +573,17 @@ instances </a> and the results are shown in the following table.</p>
   </table>
 <i>* The algorithm was terminated before local search&nbsp;</i>
 
-I ran the PETSc packages <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGLF.html">MATCOLORINGLF</a>, <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGSL.html">MATCOLORINGSL</a> and <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGID.html">MATCOLORINGID</a> on some of the publicly available data sets for comparison. The results are in the following table.
+I ran the PETSc packages <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGLF.html">MATCOLORINGLF</a>, <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGSL.html">MATCOLORINGSL</a>, <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGID.html">MATCOLORINGID</a> and <a href="https://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/MatOrderings/MATCOLORINGGREEDY.html">MATCOLORINGGREEDY</a> on some of the publicly available data sets for comparison. The results are in the following table.
 
 <table>
-	<tr><td><b>DataSet</b></td><td>MATCOLORINGLF</td><td>MATCOLORINGSL</td><td>MATCOLORINGID</td></tr>
-	<tr><td>fpsol2.i.3</td><td></td><td></td><td></td></tr>
-	<tr><td>inithx.i.3</td><td></td><td></td><td></td></tr>
-	<tr><td>le450_5d</td><td></td><td></td><td></td></tr>
-	<tr><td>mulsol.i.5</td><td></td><td></td><td></td></tr>
-	<tr><td>zeroin.i.3</td><td></td><td></td><td></td></tr>
-	<tr><td>games120</td><td></td><td></td><td></td></tr>
-	<tr><td>miles750</td><td></td><td></td><td></td></tr>
-	<tr><td>queen9_9</td><td></td><td></td><td></td></tr>
-	<tr><td>myciel7</td><td></td><td></td><td></td></tr>
+	<tr><td><b>DataSet</b></td><td>MATCOLORINGLF</td><td>MATCOLORINGSL</td><td>MATCOLORINGID</td><td>MATCOLORINGGREEDY</td></tr>
+	<tr><td>fpsol2.i.3</td><td></td><td></td><td></td><td></td></tr>
+	<tr><td>inithx.i.3</td><td></td><td></td><td></td><td></td></tr>
+	<tr><td>le450_5d</td><td></td><td></td><td></td><td></td></tr>
+	<tr><td>mulsol.i.5</td><td></td><td></td><td></td><td></td></tr>
+	<tr><td>zeroin.i.3</td><td></td><td></td><td></td><td></td></tr>
+	<tr><td>games120</td><td></td><td></td><td></td><td></td></tr>
+	<tr><td>miles750</td><td></td><td></td><td></td><td></td></tr>
+	<tr><td>queen9_9</td><td></td><td></td><td></td><td></td></tr>
+	<tr><td>myciel7</td><td></td><td></td><td></td><td></td></tr>
 </table>
