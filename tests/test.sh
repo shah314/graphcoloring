@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -v
 mkdir testing1
 cd testing1
 cp ../../*.java .
