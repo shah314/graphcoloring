@@ -583,6 +583,6 @@ instances </a> and the results are shown in the following table.</p>
 	<tr><td>zeroin.i.3</td><td>30</td><td>30</td><td>30</td></tr>
 	<tr><td>games120</td><td>9</td><td>9</td><td>9</td></tr>
 	<tr><td>miles750</td><td>32</td><td>31</td><td>32</td></tr>
-	<tr><td>queen9_9</td><td></td><td></td><td></td></tr>
-	<tr><td>myciel7</td><td></td><td></td><td></td></tr>
+	<tr><td>queen9_9</td><td>15</td><td>15</td><td>15</td></tr>
+	<tr><td>myciel7</td><td>8</td><td>8</td><td>9</td></tr>
 </table>
