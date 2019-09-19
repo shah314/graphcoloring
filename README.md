@@ -573,7 +573,7 @@ instances </a> and the results are shown in the following table.</p>
   </table>
 <i>* The algorithm was terminated before local search&nbsp;</i>
 
-<br>I ran <a href="https://github.com/CSCsw/ColPack">ColPack</a> (DISTANCE_ONE) on some of the publicly available data sets for comparison. The results are in the following table. On all of the instances, our algorithm is as good or better than the ColPack implementations. For instance, on the le450_5d and the queen9_9 instances, our method is much better.
+<br>I ran <a href="https://github.com/CSCsw/ColPack">ColPack</a> (DISTANCE_ONE) on some of the publicly available data sets for comparison. The results are in the following table. On all of the instances, our algorithm is as good or better than the ColPack implementations. On the le450_5d and the queen9_9 instances, our method is able to achieve a better coloring of the graphs.
 <table>
 	<tr><td><b>DataSet</b></td><td>LARGEST_FIRST</td><td>SMALLEST_LAST</td><td>INCIDENCE_DEGREE</td></tr>
 	<tr><td>fpsol2.i.3</td><td>30</td><td>30</td><td>30</td></tr>
