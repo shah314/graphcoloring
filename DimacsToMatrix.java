@@ -1,5 +1,3 @@
-package dimacs2matrix;
-
 import java.util.*;
 import java.io.*;
 
