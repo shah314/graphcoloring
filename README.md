@@ -577,14 +577,14 @@ instances </a> and the results are shown in the following table.</p>
 
 <br>I ran <a href="https://github.com/CSCsw/ColPack">ColPack</a> (DISTANCE_ONE) on some of the publicly available data sets for comparison. The results are in the following table. On all of the instances, our algorithm is as good or better than the ColPack implementations. On the le450_5d and the queen9_9 instances, our method is able to achieve a better coloring of the graphs.
 <table>
-	<tr><td><b>DataSet</b></td><td>LARGEST_FIRST</td><td>SMALLEST_LAST</td><td>INCIDENCE_DEGREE</td></tr>
-	<tr><td>fpsol2.i.3</td><td>30</td><td>30</td><td>30</td></tr>
-	<tr><td>inithx.i.3</td><td>31</td><td>31</td><td>32</td></tr>
-	<tr><td>le450_5d</td><td>14</td><td>12</td><td>14</td></tr>
-	<tr><td>mulsol.i.5</td><td>31</td><td>31</td><td>31</td></tr>
-	<tr><td>zeroin.i.3</td><td>30</td><td>30</td><td>30</td></tr>
-	<tr><td>games120</td><td>9</td><td>9</td><td>9</td></tr>
-	<tr><td>miles750</td><td>32</td><td>31</td><td>32</td></tr>
-	<tr><td>queen9_9</td><td>15</td><td>15</td><td>15</td></tr>
-	<tr><td>myciel7</td><td>8</td><td>8</td><td>9</td></tr>
+	<tr><td><b>DataSet</b></td><td>LARGEST_FIRST</td><td>SMALLEST_LAST</td><td>INCIDENCE_DEGREE</td><td>This Algorithm</td></tr>
+	<tr><td>fpsol2.i.3</td><td>30</td><td>30</td><td>30</td><td>30</td></tr>
+	<tr><td>inithx.i.3</td><td>31</td><td>31</td><td>32</td><td>31</td></tr>
+	<tr><td><b>le450_5d</b></td><td>14</td><td>12</td><td>14</td><td><b>7</b></td></tr>
+	<tr><td>mulsol.i.5</td><td>31</td><td>31</td><td>31</td><td>31</td></tr>
+	<tr><td>zeroin.i.3</td><td>30</td><td>30</td><td>30</td><td>30</td></tr>
+	<tr><td>games120</td><td>9</td><td>9</td><td>9</td><td>9</td></tr>
+	<tr><td>miles750</td><td>32</td><td>31</td><td>32</td><td>31</td></tr>
+	<tr><td><b>queen9_9</b></td><td>15</td><td>15</td><td>15</td><td><b>11</b></td></tr>
+	<tr><td>myciel7</td><td>8</td><td>8</td><td>9</td><td>8</td></tr>
 </table>
