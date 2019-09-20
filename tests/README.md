@@ -5,7 +5,7 @@ Please follow the following steps to test the code:
 <ol>
 <li>Use the data.col file in this directory and copy it to the directory where the source code is</li>
 <li>Compile the Java code</li>
-<li>Run "java GraphColoring" for the genetic algorithm</li>
+<li>Run "java GraphColoring" for the heuristic algorithms</li>
 <li>The algorithm should then follow a cascaded run of various steps:
 <pre>
 Reading Graph...
