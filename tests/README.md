@@ -5,7 +5,7 @@ Please follow the following steps to test the code:
 <ol>
 <li>Use the data.col file in this directory and copy it to the directory where the source code is</li>
 <li>Compile the Java code</li>
-<li>Run "java GraphColoring"</li>
+<li>Run "java GraphColoring" for the genetic algorithm</li>
 <li>The algorithm should then follow a cascaded run of various steps:
 <pre>
 Reading Graph...
@@ -24,4 +24,5 @@ Colors of Vertices:
 </pre>
 </li>
 <li>The coloring should be around 65 (it might vary as the algorithm is randomized)</li>
+<li>(Alternatively, run "java Backtracking" for the backtracking algorithm)</li>
 </ol>
