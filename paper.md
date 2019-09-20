@@ -44,7 +44,7 @@ The method uses the following steps:
 The Java code and a description are available here: <https://github.com/shah314/graphcoloring>. 
 
 The problem instances are available here: 
-<https://mat.gsia.cmu.edu/COLOR/instances.html> and 
+<https://mat.tepper.cmu.edu//COLOR/instances.html> and 
 <http://sites.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm>.
 
 # References
