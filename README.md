@@ -20,7 +20,7 @@ Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/
 	<li>Report the coloring
 </ol>
 <p>
-Instances are available <a href="http://mat.gsia.cmu.edu/COLOR/instances.html">here</a>
+Instances are available <a href="https://mat.tepper.cmu.edu//COLOR/instances.html">here</a>
 and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a>.</p>
 
 
