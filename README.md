@@ -21,8 +21,7 @@ Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/
 </ol>
 <p>
 Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html">here</a>
-and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a>.</p>
-
+and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a> (The use of graphs in binary format is not yet supported).</p>
 
 <pre>
 Compile the code and then run:
