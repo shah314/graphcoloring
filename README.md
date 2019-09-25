@@ -33,8 +33,7 @@ Example: java Backtracking data.col
 
 Please remove all comments (lines starting with a 'c') and other extraneous text from the file.
 
-Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html">here</a>
-and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a> 
+Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html">here</a> and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a> in DIMACS format.
 (The use of graphs in binary format is not yet supported).
 </pre>
 
