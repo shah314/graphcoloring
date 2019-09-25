@@ -35,6 +35,8 @@ Please remove all comments (lines starting with a 'c') and other extraneous text
 
 Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html">here</a> and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a> in DIMACS format.
 (The use of graphs in binary format is not yet supported).
+
+(If you want to use the DIMACS formatted files on ColPack, please use DimacsToMatrix.java)
 </pre>
 
 <p>
