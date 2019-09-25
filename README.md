@@ -19,21 +19,23 @@ Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/
 	<li>Improve the coloring using min-conflicts local search
 	<li>Report the coloring
 </ol>
-<p>
-Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html">here</a>
-and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a> (The use of graphs in binary format is not yet supported).</p>
 
 <pre>
 Compile the code and then run:
 
-java GraphColoring (for the heuristics)
-OR
-java Backtracking (for backtracking)
+<b>Heuristics</b>
+java GraphColoring filename
+Example: java GraphColoring data.col
 
-Change FILE in Constants.java to the file that contains the graph in a known format.
-(defaults to 'data.col' in the current directory)
+<b>Backtracking</b>
+java Backtracking filename
+Example: java Backtracking data.col
 
 Please remove all comments (lines starting with a 'c') and other extraneous text from the file.
+
+Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html">here</a>
+and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a> 
+(The use of graphs in binary format is not yet supported).
 </pre>
 
 <p>
