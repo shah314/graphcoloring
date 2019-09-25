@@ -14,25 +14,34 @@ import java.util.*;
  * Email: shah.shalin@gmail.com
  */
 public class Backtracking {
-    
+
     /** Creates a new instance of GraphColoring */
     public Backtracking() {
     }
-    
+
     public static void main(String [] args) throws Exception
     {
+      if(args.length == 0)
+      {
+          System.out.println("Usage: java Backtracking <filename>");
+          System.out.println("Example: java Backtracking data.col");
+          System.exit(0);
+      }
+
+      Constants.FILE = args[0];
+
         System.out.println("Reading Graph...");
         /* Read the graph from Constants.FILE */
         Graph graph = GraphReader.readGraph();
-        
+
         /* Compute Clique */
         LinkedHashSet clique = MaxClique.computeClique(graph);
-        
+
         /* Color the vertices of the clique with different colors */
         int k = clique.size();
         if(Constants.KNOWN_K > 0)
             k = Constants.KNOWN_K;
-        
+
         Iterator it = clique.iterator();
         int col = 0;
         while(it.hasNext())
@@ -42,14 +51,14 @@ public class Backtracking {
             node.colorNode(col);
             col++;
         }
-        
+
         /* Try to color the nodes with increasing values of k */
-        
+
         while(true)
         {
             List uncoloredNodes = new ArrayList();
             Node [] nodes = graph.nodes;
-            
+
             for(int i=0; i<nodes.length; i++)
             {
                 Node node = nodes[i];
@@ -59,7 +68,7 @@ public class Backtracking {
                     uncoloredNodes.add(node);
                 }
             }
-            
+
             PossibleColorsComparator comparator = new PossibleColorsComparator();
             Collections.sort(uncoloredNodes, comparator);
             Node previous = null;
@@ -79,7 +88,7 @@ public class Backtracking {
                 }
             }
             Node head = (Node)uncoloredNodes.get(0);
-            
+
             /* Try to color the uncolored nodes using k colors */
             Node current = (Node)uncoloredNodes.get(0);
             Node last = (Node)uncoloredNodes.get(uncoloredNodes.size()-1);
@@ -94,7 +103,7 @@ public class Backtracking {
                     solved = false;
                     break;
                 }
-                
+
                 if(current == last)
                 {
                     int nextColor = current.nextColor();
@@ -102,12 +111,12 @@ public class Backtracking {
                     {
                         nextColor = current.nextColor();
                     }
-                    
+
                     if(nextColor == Constants.UNCOLORED)
                     {
                         current.resetColorCount();
                         current = current.previous;
-                    }    
+                    }
                     else
                     {
                         /* Solved */
@@ -115,7 +124,7 @@ public class Backtracking {
                         System.out.println("\n" + k + " coloring found! Exiting...");
                         solved = true;
                         break;
-                    }   
+                    }
                 }
                 else
                 {
@@ -124,7 +133,7 @@ public class Backtracking {
                     {
                         nextColor = current.nextColor();
                     }
-                    
+
                     if(nextColor == Constants.UNCOLORED)
                     {
                         current.resetColorCount();
@@ -142,7 +151,7 @@ public class Backtracking {
                     }
                 }
             }
-            
+
             if(solved)
             {
                 break;
@@ -153,7 +162,7 @@ public class Backtracking {
             }
         }
     }
-    
+
     public static class PossibleColorsComparator implements Comparator
     {
         public int compare(Object o1, Object o2)
