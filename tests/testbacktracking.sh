@@ -4,4 +4,4 @@ cd testing1
 cp ../../*.java .
 javac *.java
 cp ../data.col .
-java Backtracking
+java Backtracking data.col
