@@ -47,196 +47,7 @@ Culberson J. (See <a href="http://citeseer.ist.psu.edu/culberson92iterated.html"
 
 <b>Cited By:</b><ul><li>Mirarab, Siavash, et al. "Statistical binning enables an accurate coalescent-based estimation of the avian tree." Science 346.6215 (2014): 1250463. (<a href="http://science.sciencemag.org/content/sci/suppl/2014/12/11/346.6215.1250463.DC1/1250463.Mirarab.SM.revision1.pdf">PDF</a>)</li><li>https://github.com/smirarab/binning</li><li>Ahmad Muklason, "Hyper-heuristics and Fairness in Examination Timetabling Problems"</li></ul></li>
 
-<p>The algorithm was run on a few <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm"> benchmark instances</a> and the results are shown
-in the following table.</p>
-  <table>
-    <tr>
-      <td   ><b>Instance</b></td>
-      <td   ><b>Vertices</b></td>
-      <td   ><b>Optimum</b></td>
-      <td   ><b>Found - Best</b></td>
-      <td   ><b>Found - Worst</b></td>
-    </tr>
-    <tr>
-      <td  >frb30-15-1</td>
-      <td  >450</td>
-      <td  >30</td>
-      <td  >30</td>
-      <td  >30</td>
-    </tr>
-    <tr>
-      <td  >frb30-15-2</td>
-      <td  >450</td>
-      <td  >30</td>
-      <td  >30</td>
-      <td  >30</td>
-    </tr>
-    <tr>
-      <td  >frb30-15-3</td>
-      <td  >450</td>
-      <td  >30</td>
-      <td  >30</td>
-      <td  >30</td>
-    </tr>
-    <tr>
-      <td  >frb30-15-4</td>
-      <td  >450</td>
-      <td  >30</td>
-      <td  >30</td>
-      <td  >30</td>
-    </tr>
-    <tr>
-      <td  >frb30-15-5</td>
-      <td  >450</td>
-      <td  >30</td>
-      <td  >30</td>
-      <td  >30</td>
-    </tr>
-    <tr>
-      <td  >frb50-23-1</td>
-      <td  >1150</td>
-      <td  >50</td>
-      <td  >50</td>
-      <td  >50</td>
-    </tr>
-    <tr>
-      <td  >frb50-23-2</td>
-      <td  >1150</td>
-      <td  >50</td>
-      <td  >50</td>
-      <td  >50</td>
-    </tr>
-    <tr>
-      <td  >frb50-23-3</td>
-      <td  >1150</td>
-      <td  >50</td>
-      <td  >50</td>
-      <td  >50</td>
-    </tr>
-    <tr>
-      <td  >frb50-23-4</td>
-      <td  >1150</td>
-      <td  >50</td>
-      <td  >50</td>
-      <td  >50</td>
-    </tr>
-    <tr>
-      <td  >frb50-23-5</td>
-      <td  >1150</td>
-      <td  >50</td>
-      <td  >50</td>
-      <td  >50</td>
-    </tr>
-    <tr>
-      <td  >frb53-24-1</td>
-      <td  >1272</td>
-      <td  >53</td>
-      <td  >53</td>
-      <td  >53</td>
-    </tr>
-    <tr>
-      <td  >frb53-24-2</td>
-      <td  >1272</td>
-      <td  >53</td>
-      <td  >53</td>
-      <td  >53</td>
-    </tr>
-    <tr>
-      <td  >frb53-24-3</td>
-      <td  >1272</td>
-      <td  >53</td>
-      <td  >53</td>
-      <td  >53</td>
-    </tr>
-    <tr>
-      <td  >frb53-24-4</td>
-      <td  >1272</td>
-      <td  >53</td>
-      <td  >53</td>
-      <td  >53</td>
-    </tr>
-    <tr>
-      <td  >frb53-24-5</td>
-      <td  >1272</td>
-      <td  >53</td>
-      <td  >53</td>
-      <td  >53</td>
-    </tr>
-    <tr>
-      <td  >frb56-25-1</td>
-      <td  >1400</td>
-      <td  >56</td>
-      <td  >56</td>
-      <td  >56</td>
-    </tr>
-    <tr>
-      <td  >frb56-25-2</td>
-      <td  >1400</td>
-      <td  >56</td>
-      <td  >56</td>
-      <td  >56</td>
-    </tr>
-    <tr>
-      <td  >frb56-25-3</td>
-      <td  >1400</td>
-      <td  >56</td>
-      <td  >56</td>
-      <td  >56</td>
-    </tr>
-    <tr>
-      <td  >frb56-25-4</td>
-      <td  >1400</td>
-      <td  >56</td>
-      <td  >56</td>
-      <td  >56</td>
-    </tr>
-    <tr>
-      <td  >frb56-25-5</td>
-      <td  >1400</td>
-      <td  >56</td>
-      <td  >56</td>
-      <td  >56</td>
-    </tr>
-    <tr>
-      <td  >frb59-26-1</td>
-      <td  >1534</td>
-      <td  >59</td>
-      <td  >59</td>
-      <td  >59</td>
-    </tr>
-    <tr>
-      <td  >frb59-26-2</td>
-      <td  >1534</td>
-      <td  >59</td>
-      <td  >59</td>
-      <td  >59</td>
-    </tr>
-    <tr>
-      <td  >frb59-26-3</td>
-      <td  >1534</td>
-      <td  >59</td>
-      <td  >59</td>
-      <td  >59</td>
-    </tr>
-    <tr>
-      <td  >frb59-26-4</td>
-      <td  >1534</td>
-      <td  >59</td>
-      <td  >59</td>
-      <td  >59</td>
-    </tr>
-    <tr>
-      <td  >frb59-26-5</td>
-      <td  >1534</td>
-      <td  >59</td>
-      <td  >59</td>
-      <td  >59</td>
-    </tr>
-  </table>
-</div>
-<p>The algorithm was run on a few <a href="http://mat.gsia.cmu.edu/COLOR/instances.html"> more
-benchmark
-instances </a> and the results are shown in the following table.</p>
+<p>The algorithm was run on a few <a href="https://mat.tepper.cmu.edu/COLOR/instances.html">benchmark instances</a> and the results are shown in the following table.</p>
   <table>
     <tr>
       <td   ><b>Instance</b></td>
@@ -576,6 +387,194 @@ instances </a> and the results are shown in the following table.</p>
     </tr>
   </table>
 <i>* The algorithm was terminated before local search&nbsp;</i>
+
+<p>The algorithm was run on a few more <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm"> benchmark instances</a> and the results are shown
+in the following table.</p>
+  <table>
+    <tr>
+      <td   ><b>Instance</b></td>
+      <td   ><b>Vertices</b></td>
+      <td   ><b>Optimum</b></td>
+      <td   ><b>Found - Best</b></td>
+      <td   ><b>Found - Worst</b></td>
+    </tr>
+    <tr>
+      <td  >frb30-15-1</td>
+      <td  >450</td>
+      <td  >30</td>
+      <td  >30</td>
+      <td  >30</td>
+    </tr>
+    <tr>
+      <td  >frb30-15-2</td>
+      <td  >450</td>
+      <td  >30</td>
+      <td  >30</td>
+      <td  >30</td>
+    </tr>
+    <tr>
+      <td  >frb30-15-3</td>
+      <td  >450</td>
+      <td  >30</td>
+      <td  >30</td>
+      <td  >30</td>
+    </tr>
+    <tr>
+      <td  >frb30-15-4</td>
+      <td  >450</td>
+      <td  >30</td>
+      <td  >30</td>
+      <td  >30</td>
+    </tr>
+    <tr>
+      <td  >frb30-15-5</td>
+      <td  >450</td>
+      <td  >30</td>
+      <td  >30</td>
+      <td  >30</td>
+    </tr>
+    <tr>
+      <td  >frb50-23-1</td>
+      <td  >1150</td>
+      <td  >50</td>
+      <td  >50</td>
+      <td  >50</td>
+    </tr>
+    <tr>
+      <td  >frb50-23-2</td>
+      <td  >1150</td>
+      <td  >50</td>
+      <td  >50</td>
+      <td  >50</td>
+    </tr>
+    <tr>
+      <td  >frb50-23-3</td>
+      <td  >1150</td>
+      <td  >50</td>
+      <td  >50</td>
+      <td  >50</td>
+    </tr>
+    <tr>
+      <td  >frb50-23-4</td>
+      <td  >1150</td>
+      <td  >50</td>
+      <td  >50</td>
+      <td  >50</td>
+    </tr>
+    <tr>
+      <td  >frb50-23-5</td>
+      <td  >1150</td>
+      <td  >50</td>
+      <td  >50</td>
+      <td  >50</td>
+    </tr>
+    <tr>
+      <td  >frb53-24-1</td>
+      <td  >1272</td>
+      <td  >53</td>
+      <td  >53</td>
+      <td  >53</td>
+    </tr>
+    <tr>
+      <td  >frb53-24-2</td>
+      <td  >1272</td>
+      <td  >53</td>
+      <td  >53</td>
+      <td  >53</td>
+    </tr>
+    <tr>
+      <td  >frb53-24-3</td>
+      <td  >1272</td>
+      <td  >53</td>
+      <td  >53</td>
+      <td  >53</td>
+    </tr>
+    <tr>
+      <td  >frb53-24-4</td>
+      <td  >1272</td>
+      <td  >53</td>
+      <td  >53</td>
+      <td  >53</td>
+    </tr>
+    <tr>
+      <td  >frb53-24-5</td>
+      <td  >1272</td>
+      <td  >53</td>
+      <td  >53</td>
+      <td  >53</td>
+    </tr>
+    <tr>
+      <td  >frb56-25-1</td>
+      <td  >1400</td>
+      <td  >56</td>
+      <td  >56</td>
+      <td  >56</td>
+    </tr>
+    <tr>
+      <td  >frb56-25-2</td>
+      <td  >1400</td>
+      <td  >56</td>
+      <td  >56</td>
+      <td  >56</td>
+    </tr>
+    <tr>
+      <td  >frb56-25-3</td>
+      <td  >1400</td>
+      <td  >56</td>
+      <td  >56</td>
+      <td  >56</td>
+    </tr>
+    <tr>
+      <td  >frb56-25-4</td>
+      <td  >1400</td>
+      <td  >56</td>
+      <td  >56</td>
+      <td  >56</td>
+    </tr>
+    <tr>
+      <td  >frb56-25-5</td>
+      <td  >1400</td>
+      <td  >56</td>
+      <td  >56</td>
+      <td  >56</td>
+    </tr>
+    <tr>
+      <td  >frb59-26-1</td>
+      <td  >1534</td>
+      <td  >59</td>
+      <td  >59</td>
+      <td  >59</td>
+    </tr>
+    <tr>
+      <td  >frb59-26-2</td>
+      <td  >1534</td>
+      <td  >59</td>
+      <td  >59</td>
+      <td  >59</td>
+    </tr>
+    <tr>
+      <td  >frb59-26-3</td>
+      <td  >1534</td>
+      <td  >59</td>
+      <td  >59</td>
+      <td  >59</td>
+    </tr>
+    <tr>
+      <td  >frb59-26-4</td>
+      <td  >1534</td>
+      <td  >59</td>
+      <td  >59</td>
+      <td  >59</td>
+    </tr>
+    <tr>
+      <td  >frb59-26-5</td>
+      <td  >1534</td>
+      <td  >59</td>
+      <td  >59</td>
+      <td  >59</td>
+    </tr>
+  </table>
+</div>
 
 <br>I ran <a href="https://github.com/CSCsw/ColPack">ColPack</a> (DISTANCE_ONE) on some of the publicly available data sets for comparison. The results are in the following table. On all of the instances, our algorithm is as good or better than the ColPack implementations. On the le450_5d and the queen9_9 instances, our method is able to achieve a better coloring of the graphs.
 <table>
