@@ -386,8 +386,8 @@ Culberson J. (See <a href="http://citeseer.ist.psu.edu/culberson92iterated.html"
       <td  >8</td>
     </tr>
   </table>
-<i>* The algorithm was terminated before local search&nbsp;</i>
-
+<i>* The algorithm was terminated before local search</i>
+<br><br>
 <p>The algorithm was run on a few more <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm"> benchmark instances</a> and the results are shown
 in the following table.</p>
   <table>
