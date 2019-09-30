@@ -43,6 +43,8 @@ Please remove all comments (lines starting with a 'c') and other extraneous text
 Please run testsautomated.sh in the tests directory to test the code.
 (Please change the permissions of all .sh files to u+x i.e. run chmod u+x *.sh)
 
+<b>Please see <a href="parameters.md">PARAMETERS</a> to see a list of parameters that can be passed in.</b>
+
 Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html">here</a> and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a> in DIMACS format.
 (The use of graphs in binary format is not yet supported).
 
@@ -50,14 +52,14 @@ Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html
 
 If you need to run the algorithm for <b>very large graphs</b>, 
 please consider changing the following variables:
-Constants.LOCAL_SEARCH_ITERATIONS
-Constants.LOCAL_SEARCH_MAX_TIME
+LOCAL_SEARCH_ITERATIONS
+LOCAL_SEARCH_MAX_TIME
 You may also consider not running local search at all, like <a href="https://github.com/smirarab/binning">this</a> user has 
 done. 
-To do this, please comment out the line after this line:
-"System.out.println("Applying Local Search...");" in GraphColoring.java.
-
+To do this, pass in LOCAL_SEARCH=false to the java run.
 If you need help, please open an issue.
+
+<b>Please see <a href="parameters.md">PARAMETERS</a> to see a list of parameters that can be passed in.</b>
 </pre>
 
 <p>
