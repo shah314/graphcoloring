@@ -40,6 +40,9 @@ Example: java Backtracking data.col
 
 Please remove all comments (lines starting with a 'c') and other extraneous text from the file.
 
+Please run testsautomated.sh in the tests directory to test the code.
+(Please change the permissions of all .sh files to u+x i.e. run chmod u+x *.sh)
+
 Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html">here</a> and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a> in DIMACS format.
 (The use of graphs in binary format is not yet supported).
 
