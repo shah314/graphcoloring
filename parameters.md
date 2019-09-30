@@ -10,13 +10,13 @@ java GraphColoring filename [optional parameters]
 The typical configuration can be run as under:
 
 For heuristics:
-<b>java GraphColoring data.col LOCAL_SEARCH=true ITERATED_GREEDY_ITERATIONS=1000</b>
+<i>java GraphColoring data.col LOCAL_SEARCH=true ITERATED_GREEDY_ITERATIONS=1000</i>
 
 For backtracking:
-<b>java Backtracking data.col TIME=1000</b>
+<i>java Backtracking data.col TIME=1000</i>
 
 The optional parameters (with default values):
-<pre>
+
 <b>LOCAL_SEARCH=true</b>
 Please set this to true to get the best coloring possible.
 If the speed of coloring is critical, please set this to false.
