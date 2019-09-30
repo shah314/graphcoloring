@@ -24,7 +24,7 @@ public class GraphColoring {
         {
             System.out.println("Usage: java GraphColoring <filename> [options]");
             System.out.println("Example: java GraphColoring data.col [options]");
-            System.out.println("[options] could be some or all of the following (with defaults shown after the '='):");
+            System.out.println("\t[options] could be some or all of the following\n\t(with defaults shown after the '='):");
             System.out.println("\tLOCAL_SEARCH=true");
             System.out.println("\tLOCAL_SEARCH_ITERATIONS=1000");
             System.out.println("\tLOCAL_SEARCH_MAX_TIME=1000");
