@@ -40,8 +40,9 @@ Example: java Backtracking data.col
 
 Please remove all comments (lines starting with a 'c') and other extraneous text from the file.
 
-Please run testsautomated.sh in the tests directory to test the code.
-(Please change the permissions of all .sh files to u+x i.e. run chmod u+x *.sh)
+<b><i>Please run automatedtests.sh in the tests directory to test the code.</i></b>
+
+(Please change the permissions of all .sh files to u+x i.e. run <b>chmod u+x *.sh</b>)
 
 <b>Please see <a href="parameters.md">PARAMETERS</a> to see a list of parameters that can be passed in.</b>
 
