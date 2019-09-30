@@ -52,12 +52,9 @@ Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html
 (If you want to use the DIMACS formatted files on ColPack, please use DimacsToMatrix.java)
 
 If you need to run the algorithm for <b>very large graphs</b>, 
-please consider changing the following variables:
-LOCAL_SEARCH_ITERATIONS
-LOCAL_SEARCH_MAX_TIME
-You may also consider not running local search at all, like <a href="https://github.com/smirarab/binning">this</a> user has 
-done. 
-To do this, pass in LOCAL_SEARCH=false to the java run.
+please consider setting the following variables:
+LOCAL_SEARCH=false
+Please see <a href="parameters.md">parameters</a>.
 If you need help, please open an issue.
 
 <b>Please see <a href="parameters.md">PARAMETERS</a> to see a list of parameters that can be passed in.</b>
