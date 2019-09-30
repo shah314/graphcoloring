@@ -41,6 +41,15 @@ Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html
 (The use of graphs in binary format is not yet supported).
 
 (If you want to use the DIMACS formatted files on ColPack, please use DimacsToMatrix.java)
+
+If you need to run the algorithm for <b>very large graphs</b>, 
+please consider changing the following variables:
+Constants.LOCAL_SEARCH_ITERATIONS
+Constants.LOCAL_SEARCH_MAX_TIME
+You may also consider not running local search at all, like <a href="https://github.com/smirarab/binning">this</a> user has 
+done. 
+To do this, please comment out the line after this line:
+"System.out.println("Applying Local Search...");" in GraphColoring.java.
 </pre>
 
 <p>
