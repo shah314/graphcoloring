@@ -54,6 +54,7 @@ Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html
 If you need to run the algorithm for <b>very large graphs</b>, 
 please consider setting the following variables:
 LOCAL_SEARCH=false
+i.e. <b>java GraphColoring data.col LOCAL_SEARCH=false ITERATED_GREEDY_ITERATIONS=1000</b>
 Please see <a href="parameters.md">parameters</a>.
 If you need help, please open an issue.
 
