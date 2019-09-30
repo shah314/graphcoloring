@@ -47,7 +47,7 @@ public class Constants {
     public static final double RANDOM = 0.05;
 
     // local search
-    public static final int LOCAL_SEARCH_ITERATIONS = 10000;
-    public static final long LOCAL_SEARCH_MAX_TIME = 20000; // milliseconds
+    public static final int LOCAL_SEARCH_ITERATIONS = 1000;
+    public static final long LOCAL_SEARCH_MAX_TIME = 1000; // milliseconds
 
 }
