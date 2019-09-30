@@ -22,7 +22,7 @@ public class IteratedGreedy {
             colors[i] = graph.nodes[i].color;
         }
         
-        for(int i=0; i<Constants.ITERATIONS; i++)
+        for(int i=0; i<Constants.ITERATED_GREEDY_ITERATIONS; i++)
         {
             double rand = Math.random();
             Node [] order = null;

@@ -37,7 +37,7 @@ public class MaxClique
         int prevBest = clique.clique.size();
         int count = 0;
         int [] restarts = new int[Constants.NUMBER_NODES];
-        for(int i=0; i<Constants.ANNEALING_ITERATIONS; i++)
+        for(int i=0; i<Constants.CLIQUE_ITERATIONS; i++)
         {
             //System.out.println(gBest.size());  
             

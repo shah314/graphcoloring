@@ -15,13 +15,25 @@ public class GraphColoring {
 
     public static void main(String [] args) throws Exception
     {
+    	colorGraph(args);
+    }
+    
+    public static int colorGraph(String [] args) throws Exception
+    {
         if(args.length == 0)
         {
-            System.out.println("Usage: java GraphColoring <filename>");
-            System.out.println("Example: java GraphColoring data.col");
+            System.out.println("Usage: java GraphColoring <filename> [options]");
+            System.out.println("Example: java GraphColoring data.col [options]");
+            System.out.println("[options] could be some or all of the following (with defaults shown after the '='):");
+            System.out.println("\tLOCAL_SEARCH=true");
+            System.out.println("\tLOCAL_SEARCH_ITERATIONS=1000");
+            System.out.println("\tLOCAL_SEARCH_MAX_TIME=1000");
+            System.out.println("\tITERATED_GREEDY_ITERATIONS=1000");
             System.exit(0);
         }
 
+        ParseArguments.parse(args);
+        
         Constants.FILE = args[0];
         System.out.println("Reading Graph...");
         /* Read the graph from Constants.FILE */
@@ -112,19 +124,22 @@ public class GraphColoring {
             }
         }
 
-        System.out.println("Applying Local Search...");
-        colors = LocalSearch.localSearch(graph, maxColor);
-        maxColor = -1;
-        for(int i=0; i<colors.length; i++)
+        if(Constants.LOCAL_SEARCH)
         {
-            if(maxColor == -1)
-            {
-                maxColor = colors[i];
-            }
-            else if(maxColor < colors[i])
-            {
-                maxColor = colors[i];
-            }
+	        System.out.println("Applying Local Search...");
+	        colors = LocalSearch.localSearch(graph, maxColor);
+	        maxColor = -1;
+	        for(int i=0; i<colors.length; i++)
+	        {
+	            if(maxColor == -1)
+	            {
+	                maxColor = colors[i];
+	            }
+	            else if(maxColor < colors[i])
+	            {
+	                maxColor = colors[i];
+	            }
+	        }
         }
 
         System.out.println("Final Coloring of graph possible with " + maxColor + " colors.");
@@ -133,6 +148,8 @@ public class GraphColoring {
         {
             System.out.print(colors[i] + " ");
         }
+        
+        return maxColor;
     }
 
     public static class PossibleColorsComparator implements Comparator

@@ -21,14 +21,20 @@ public class Backtracking {
 
     public static void main(String [] args) throws Exception
     {
-      if(args.length == 0)
-      {
-          System.out.println("Usage: java Backtracking <filename>");
-          System.out.println("Example: java Backtracking data.col");
-          System.exit(0);
-      }
+    	colorGraph(args);
+    }
+    
+    public static int colorGraph(String [] args) throws Exception
+    {
+    	if(args.length == 0)
+    	{
+    		System.out.println("Usage: java Backtracking <filename>");
+    		System.out.println("Example: java Backtracking data.col");
+    		System.exit(0);
+    	}
 
-      Constants.FILE = args[0];
+    	ParseArguments.parse(args);
+    	Constants.FILE = args[0];
 
         System.out.println("Reading Graph...");
         /* Read the graph from Constants.FILE */
@@ -161,6 +167,19 @@ public class Backtracking {
                 k++;
             }
         }
+        
+        System.out.println("Colors of Vertices: ");
+        int maxColor = Integer.MIN_VALUE;
+        for(int i=0; i<graph.nodes.length; i++)
+        {
+            System.out.print(graph.nodes[i].color + " ");
+            if(graph.nodes[i].color > maxColor)
+            {
+            	maxColor = graph.nodes[i].color;
+            }
+        }
+        
+        return maxColor;
     }
 
     public static class PossibleColorsComparator implements Comparator
