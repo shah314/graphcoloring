@@ -21,7 +21,11 @@ Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/
 </ol>
 
 <pre>
-Compile the code and then run:
+Compile the code:
+javac *.java
+(Please ignore the compilation warning, it is because the code does not use generics)
+
+Then, run the algorithm using any of the two methods:
 
 <b>Heuristics</b>
 java GraphColoring filename
