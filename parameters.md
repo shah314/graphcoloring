@@ -3,14 +3,14 @@
 The usage of the Java code is as follows:
 <br>
 <pre>
-java GraphColoring <filename> [optional parameters]
+java GraphColoring filename [optional parameters]
 </pre>
 
 <pre>
-The default configuration can be run as under:
+The typical configuration can be run as under:
 
 For heuristics:
-<b>java GraphColoring data.col LOCAL_SEARCH=true LOCAL_SEARCH_ITERATIONS=1000 LOCAL_SEARCH_MAX_TIME=1000 ITERATED_GREEDY_ITERATIONS=1000</b>
+<b>java GraphColoring data.col LOCAL_SEARCH=true ITERATED_GREEDY_ITERATIONS=1000</b>
 
 For backtracking:
 <b>java Backtracking data.col TIME=1000</b>
