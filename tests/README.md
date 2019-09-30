@@ -1,6 +1,7 @@
 <h1>Testing the graph coloring code</h1>
 
-Please run <b>testsautomated.sh</b> to run all tests.
+Please run <b>testsautomated.sh</b> in the tests directory to test the code.
+(Please change the permissions of all .sh files to u+x i.e. run chmod u+x *.sh)
 
 Please follow the following steps to test the code:
 
