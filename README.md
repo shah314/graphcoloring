@@ -589,7 +589,7 @@ in the following table.</p>
   </table>
 </div>
 
-<br>I ran <a href="https://github.com/CSCsw/ColPack">ColPack</a> (DISTANCE_ONE) on some of the publicly available data sets for comparison. The results are in the following table. On all of the instances, our algorithm is as good or better than the ColPack implementations. On the le450_5d and the queen9_9 instances, our method is able to achieve a better coloring of the graphs.
+<br>I ran <a href="https://github.com/CSCsw/ColPack">ColPack</a> (DISTANCE_ONE) on some of the publicly available data sets for comparison. The results are in the following table. On all of the instances, our algorithm is as good or better than the ColPack implementations. On the le450_5d and the queen9_9 instances, our method is able to achieve a better coloring of the graphs. On the largest instance (inithx.i.3) with 621 vertices, ColPack took 45 milliseconds and this algorithm (without local search) took 2 seconds. It is possible to reduce the run time by changing the variables in Constants.java. Please open an issue if you need help with reducing the run time. Local search takes the longest time, so it should be used only if you need the best coloring possible, irrespective of run time.
 <table>
 	<tr><td><b>DataSet</b></td><td>LARGEST_FIRST</td><td>SMALLEST_LAST</td><td>INCIDENCE_DEGREE</td><td>This Algorithm</td></tr>
 	<tr><td>fpsol2.i.3</td><td>30</td><td>30</td><td>30</td><td>30</td></tr>
