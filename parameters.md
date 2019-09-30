@@ -15,7 +15,7 @@ For heuristics:
 For backtracking:
 <i>java Backtracking data.col TIME=1000</i>
 
-The optional parameters (with default values):
+The optional (case sensitive) parameters (with default values):
 
 <b>LOCAL_SEARCH=true</b>
 Please set this to true to get the best coloring possible.
