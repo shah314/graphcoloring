@@ -36,8 +36,9 @@ Please leave it to 1000 for a moderately fast algorithm.
 Please increase this to a much larger value, if all you seek is a good coloring as oppoosed to speed.
 
 <b>TIME=1000</b>
-This parameter, in milliseconds, controls how much time is spent on each k in the Backtracking algorithm.
+This parameter, in milliseconds, controls how much time is spent on each k in the 
+Backtracking algorithm.
 Please leave this to 1000 if time is critical.
-Please increase this to a much higher value, if time is not critical and you can spend several minutes 
-to several hours on the coloring.
+Please increase this to a much higher value, if time is not critical and you can spend 
+several minutes to several hours on the coloring.
 </pre>
