@@ -1,5 +1,7 @@
 <h1>Testing the graph coloring code</h1>
 
+Please run <b>testall.sh</b> to run all tests.
+
 Please follow the following steps to test the code:
 
 <ol>
