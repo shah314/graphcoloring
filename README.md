@@ -53,6 +53,8 @@ You may also consider not running local search at all, like <a href="https://git
 done. 
 To do this, please comment out the line after this line:
 "System.out.println("Applying Local Search...");" in GraphColoring.java.
+
+If you need help, please open an issue.
 </pre>
 
 <p>
