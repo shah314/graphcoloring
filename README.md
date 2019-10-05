@@ -130,13 +130,10 @@ If you need help, please open an issue.
 |myciel5|47|6|6|6|
 |myciel6|95|7|7|7|
 |myciel7|191|8|8|8|
-
-  
   
 * The algorithm was terminated before local search
 
-
-The algorithm was run on a few more [benchmark instances](http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm) and the results are shown in the following table.
+### The algorithm was run on a few more [benchmark instances](http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm) and the results are shown in the following table.
 
 ||||||
 |--- |--- |--- |--- |--- |
@@ -167,6 +164,7 @@ The algorithm was run on a few more [benchmark instances](http://www.nlsde.buaa.
 |frb59-26-4|1534|59|59|59|
 |frb59-26-5|1534|59|59|59|
 
+## ColPack comparison
 
 I ran [ColPack](https://github.com/CSCsw/ColPack) (DISTANCE_ONE) on some of the publicly available data sets for comparison. The results are in the following table. On all of the instances, our algorithm is as good or better than the ColPack implementations. On the le450_5d and the queen9_9 instances, our method is able to achieve a better coloring of the graphs. 
 
