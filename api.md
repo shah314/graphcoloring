@@ -1,6 +1,6 @@
 # Using the code as an API
 
-## Please include target/graphcoloring-1.7-jar-with-dependencies.jar in the classpath.
+### Please include target/graphcoloring-1.7-jar-with-dependencies.jar in the classpath.
 
 ## Heuristics
 
