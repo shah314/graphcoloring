@@ -67,7 +67,7 @@ If you need to run the algorithm for very large graphs, please consider setting 
 
 If you need help, please open an issue.
 
-### If you want to call the code as an API, please see [API](api.md)
+### If you want to call the code as an API, please see [API](api.md).
 
 [1]"New methods to color the vertices of a graph", Brelaz D., CACM 22(4) pp 251--256
 
