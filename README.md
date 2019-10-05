@@ -24,27 +24,22 @@ Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/
 </ol>
 
 <pre>
-Compile the code:
-javac *.java
+Maven is needed to compile and pakage the code. For e.g. you might run <b>brew install maven</b> on a Mac.
+Compile the code using Maven:
+mvn package
 (Please ignore the compilation warning, it is because the code does not use generics)
 
 Then, run the algorithm using any of the two methods:
 
 <b>Heuristics</b>
-java GraphColoring filename
-Example: java GraphColoring data.col
+java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring -f data.col
 
 <b>Backtracking</b>
-java Backtracking filename
-Example: java Backtracking data.col
+java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking -f data.col
 
 Please remove all comments (lines starting with a 'c') and other extraneous text from the file.
 
 <b><i>Please run automatedtests.sh in the tests directory to test the code.</i></b>
-
-(Please change the permissions of all .sh files to u+x i.e. run <b>chmod u+x *.sh</b>)
-
-<b>Please see <a href="parameters.md">PARAMETERS</a> to see a list of parameters that can be passed in.</b>
 
 Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html">here</a> and <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">here</a> in DIMACS format.
 (The use of graphs in binary format is not yet supported).
@@ -52,13 +47,12 @@ Instances are available <a href="https://mat.tepper.cmu.edu/COLOR/instances.html
 (If you want to use the DIMACS formatted files on ColPack, please use DimacsToMatrix.java)
 
 If you need to run the algorithm for <b>very large graphs</b>, 
-please consider setting the following variables:
-LOCAL_SEARCH=false
-i.e. <b>java GraphColoring data.col LOCAL_SEARCH=false ITERATED_GREEDY_ITERATIONS=1000</b>
-Please see <a href="parameters.md">parameters</a>.
+please consider setting local search to false.
+java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring -f data.col -l false
+
 If you need help, please open an issue.
 
-<b>Please see <a href="parameters.md">PARAMETERS</a> to see a list of parameters that can be passed in.</b>
+<b>If you want to call the code as an API, please see <a href="api.md">API.md</a>.</b>
 </pre>
 
 <p>
