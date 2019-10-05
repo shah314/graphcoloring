@@ -55,7 +55,7 @@ Please remove all comments (lines starting with a 'c') and other extraneous text
 
 ### Please run automatedtests.sh in the tests directory to test the code.
 
-Instances are available [here](https://mat.tepper.cmu.edu/COLOR/instances.html">here) and [here](http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm) in DIMACS format.
+Instances are available [here](https://mat.tepper.cmu.edu/COLOR/instances.html) and [here](http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm) in DIMACS format.
 (The use of graphs in binary format is not yet supported).
 
 (If you want to use the DIMACS formatted files on ColPack, please use DimacsToMatrix.java)
@@ -75,9 +75,9 @@ If you need help, please open an issue.
 
 ### Cited By:
 
-	Mirarab, Siavash, et al. "Statistical binning enables an accurate coalescent-based estimation of the avian tree." Science 346.6215 (2014): 1250463.
-	[https://github.com/smirarab/binning](https://github.com/smirarab/binning)
-	Ahmad Muklason, Hyper-heuristics and Fairness in Examination Timetabling Problems
+1) Mirarab, Siavash, et al. "Statistical binning enables an accurate coalescent-based estimation of the avian tree." Science 346.6215 (2014): 1250463. 
+2) [https://github.com/smirarab/binning/](https://github.com/smirarab/binning/)
+3) Ahmad Muklason, Hyper-heuristics and Fairness in Examination Timetabling Problems
 
 ### The algorithm was run on a few [benchmark instances](https://mat.tepper.cmu.edu/COLOR/instances.html) and the results are shown in the following table.
 
