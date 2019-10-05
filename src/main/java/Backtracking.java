@@ -4,6 +4,7 @@ import java.util.*;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
+import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 
@@ -29,14 +30,28 @@ public class Backtracking {
     {
     	Options options = new Options();
     	Option o1 = new Option("f", true, "The DIMACS formatted graph file name");
-    	o1.setRequired(true);
+    	o1.setRequired(false);
     	options.addOption(o1);
     	Option o2 = new Option("t", true, "Number of milliseconds to spend on each value of k");
     	o2.setRequired(false);
     	options.addOption(o2);
+
+    	Option o6 = new Option("help", false, "This help message");
+    	o6.setRequired(false);
+    	options.addOption(o6);
+    	Option o7 = new Option("h", false, "This help message");
+    	o7.setRequired(false);
+    	options.addOption(o7);
     	
     	CommandLineParser parser = new DefaultParser();
     	CommandLine cmd = parser.parse( options, args);
+    	
+    	if (!cmd.hasOption("f") || cmd.hasOption("help") || cmd.hasOption("h")) 
+    	{
+            HelpFormatter helpFormatter = new HelpFormatter();
+            helpFormatter.printHelp("java -cp graphcoloring-1.7-jar-with-dependencies.jar Backtracking", options);
+            System.exit(0);
+    	}
     	
     	String filename = cmd.getOptionValue("f");
     	int milliseconds = Integer.parseInt(cmd.getOptionValue("t", "1000"));
