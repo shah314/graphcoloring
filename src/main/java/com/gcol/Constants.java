@@ -1,3 +1,4 @@
+package com.gcol;
 
 /**
  * Constants.
@@ -14,7 +15,7 @@ public class Constants {
      * The format is specified by the following URL:
      * http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm
      */
-    public static String FILE = "data.col";
+    //public static String FILE = "data.col";
 
     /* The number of iterations */
     public static int CLIQUE_ITERATIONS = 2000;

@@ -1,5 +1,13 @@
+package com.gcol;
 
 import java.util.*;
+
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.DefaultParser;
+import org.apache.commons.cli.HelpFormatter;
+import org.apache.commons.cli.Option;
+import org.apache.commons.cli.Options;
 
 /**
  * Backtracking solver for the graph coloring problem.
@@ -21,26 +29,66 @@ public class Backtracking {
 
     public static void main(String [] args) throws Exception
     {
-    	colorGraph(args);
+    	Options options = new Options();
+    	Option o1 = new Option("f", true, "The DIMACS formatted graph file name");
+    	o1.setRequired(false);
+    	options.addOption(o1);
+    	Option o2 = new Option("t", true, "Number of milliseconds to spend on each value of k");
+    	o2.setRequired(false);
+    	options.addOption(o2);
+
+    	Option o6 = new Option("help", false, "This help message");
+    	o6.setRequired(false);
+    	options.addOption(o6);
+    	Option o7 = new Option("h", false, "This help message");
+    	o7.setRequired(false);
+    	options.addOption(o7);
+    	
+    	CommandLineParser parser = new DefaultParser();
+    	CommandLine cmd = parser.parse( options, args);
+    	
+    	if (!cmd.hasOption("f") || cmd.hasOption("help") || cmd.hasOption("h")) 
+    	{
+            HelpFormatter helpFormatter = new HelpFormatter();
+            helpFormatter.printHelp("java -cp graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking", options);
+            System.exit(0);
+    	}
+    	
+    	String filename = cmd.getOptionValue("f");
+    	int milliseconds = Integer.parseInt(cmd.getOptionValue("t", "1000"));
+    	System.out.println("Reading Graph...");
+        /* Read the graph from Constants.FILE */
+        Graph graph = GraphReader.readGraph(filename);
+        
+        int [] colors = colorGraph(graph, milliseconds);
+        int maxColor = -1;
+        for(int i=0; i<colors.length; i++)
+        {
+            if(maxColor == -1)
+            {
+                maxColor = colors[i];
+            }
+            else if(maxColor < colors[i])
+            {
+                maxColor = colors[i];
+            }
+        }
+        
+        System.out.println("Final Coloring of graph possible with " + maxColor + " colors.");
+        System.out.println("Colors of Vertices: ");
+        for(int i=0; i<colors.length; i++)
+        {
+            System.out.print(colors[i] + " ");
+        }       
+        
+        System.out.println("\nFinished\n");
     }
     
-    public static int colorGraph(String [] args) throws Exception
+    public static int [] colorGraph(Graph graph, int milliseconds) throws Exception
     {
-    	if(args.length == 0)
-    	{
-    		System.out.println("Usage: java Backtracking <filename>");
-    		System.out.println("Example: java Backtracking data.col");
-    		System.exit(0);
-    	}
-
-    	ParseArguments.parse(args);
-    	Constants.FILE = args[0];
-
-        System.out.println("Reading Graph...");
-        /* Read the graph from Constants.FILE */
-        Graph graph = GraphReader.readGraph();
-
-        /* Compute Clique */
+    	Constants.TIME = milliseconds;
+    	
+    	/* Compute Clique */
         LinkedHashSet clique = MaxClique.computeClique(graph);
 
         /* Color the vertices of the clique with different colors */
@@ -169,17 +217,13 @@ public class Backtracking {
         }
         
         System.out.println("Colors of Vertices: ");
-        int maxColor = Integer.MIN_VALUE;
+        int [] colors = new int [Constants.NUMBER_NODES];
         for(int i=0; i<graph.nodes.length; i++)
         {
-            System.out.print(graph.nodes[i].color + " ");
-            if(graph.nodes[i].color > maxColor)
-            {
-            	maxColor = graph.nodes[i].color;
-            }
+        	colors[i] = graph.nodes[i].color;
         }
         
-        return maxColor;
+        return colors;
     }
 
     public static class PossibleColorsComparator implements Comparator

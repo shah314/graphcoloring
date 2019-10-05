@@ -1,3 +1,4 @@
+package com.gcol;
 
 import java.util.*;
 import java.io.*;
@@ -17,14 +18,15 @@ public class GraphReader {
     public GraphReader() {
     }
  
-    public static Graph readGraph() throws Exception
+    public static Graph readGraph(String file) throws Exception
     {
-        BufferedReader reader = new BufferedReader(new FileReader(new File(Constants.FILE)));
+        BufferedReader reader = new BufferedReader(new FileReader(new File(file)));
         String line = reader.readLine();
         while(line.charAt(0) == 'c')
         {
             line = reader.readLine();
         }
+        
         if(line.charAt(0) != 'p')
         {
             System.out.println("Input File Format Not Understood.");
