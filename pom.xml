@@ -1,6 +1,6 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>graphcoloring</groupId>
+  <groupId>com.gcol</groupId>
   <artifactId>graphcoloring</artifactId>
   <version>1.7</version>
   <build>

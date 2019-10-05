@@ -1,7 +1,4 @@
 #!/bin/bash -v
-mkdir testing1
-cd testing1
-cp ../../*.java .
-javac *.java
-cp ../data.col .
-java Backtracking data.col
+cd ..
+mvn package
+java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking -f data.col -t 1000

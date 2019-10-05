@@ -1,3 +1,4 @@
+package com.gcol;
 
 import java.util.*;
 
@@ -52,7 +53,7 @@ public class GraphColoring {
     	if (!cmd.hasOption("f") || cmd.hasOption("help") || cmd.hasOption("h")) 
     	{
             HelpFormatter helpFormatter = new HelpFormatter();
-            helpFormatter.printHelp("java -cp graphcoloring-1.7-jar-with-dependencies.jar GraphColoring", options);
+            helpFormatter.printHelp("java -cp graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring", options);
             System.exit(0);
     	}
     	

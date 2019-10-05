@@ -1,3 +1,4 @@
+package com.gcol;
 
 /* 
  * A node in the sorted list based on the degrees of the graph nodes

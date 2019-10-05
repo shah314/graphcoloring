@@ -1,3 +1,4 @@
+package com.gcol;
 
 import java.util.*;
 
@@ -49,7 +50,7 @@ public class Backtracking {
     	if (!cmd.hasOption("f") || cmd.hasOption("help") || cmd.hasOption("h")) 
     	{
             HelpFormatter helpFormatter = new HelpFormatter();
-            helpFormatter.printHelp("java -cp graphcoloring-1.7-jar-with-dependencies.jar Backtracking", options);
+            helpFormatter.printHelp("java -cp graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking", options);
             System.exit(0);
     	}
     	
