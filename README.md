@@ -27,27 +27,29 @@ Compile the code using Maven:
 Then, run the algorithm using any of the two methods:
 
 ### Heuristics
-java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring -f data.col
 
-java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring
-usage: java -cp graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring
- -f <arg>   The DIMACS formatted graph file name
- -h         This help message
- -help      This help message
- -i <arg>   Number of iterated greedy iterations
- -j <arg>   Number of local search iterations
- -l <arg>   Enable local search true/false
- -m <arg>   Number of milliseconds to spend on local search
+	java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring -f data.col
+
+	java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring
+	usage: java -cp graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring
+	 -f <arg>   The DIMACS formatted graph file name
+	 -h         This help message
+	 -help      This help message
+	 -i <arg>   Number of iterated greedy iterations
+	 -j <arg>   Number of local search iterations
+	 -l <arg>   Enable local search true/false
+	 -m <arg>   Number of milliseconds to spend on local search
 
 ### Backtracking
-java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking -f data.col
 
-java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking
-usage: java -cp graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking
- -f <arg>   The DIMACS formatted graph file name
- -h         This help message
- -help      This help message
- -t <arg>   Number of milliseconds to spend on each value of k
+	java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking -f data.col
+
+	java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking
+	usage: java -cp graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking
+	 -f <arg>   The DIMACS formatted graph file name
+	 -h         This help message
+	 -help      This help message
+	 -t <arg>   Number of milliseconds to spend on each value of k
 
 Please remove all comments (lines starting with a 'c') and other extraneous text from the file.
 
