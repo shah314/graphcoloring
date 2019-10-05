@@ -7,7 +7,7 @@ public class APICallHeuristics
 {
 	public static void main(String [] args) throws Exception
 	{
-		Graph graph = GraphReader.readGraph("filename");
+		Graph graph = GraphReader.readGraph("./data.col");
 		// where filename is a DIMACS formatted graph file
 		boolean localsearch = true;
 		int iteratedgreedyiterations = 1000;
@@ -32,7 +32,7 @@ public class APICallHeuristics
 		System.out.println("Colors of Vertices: ");
 		for(int i=0; i<colors.length; i++)
 		{
-		    System.out.print(colors[i] + " ");
+		    System.out.print(graph.nodes[i].value + ":" + colors[i] + ",");
 		}
 
 	}

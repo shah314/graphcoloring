@@ -7,7 +7,7 @@ public class APICallBacktracking
 {
 	public static void main(String [] args) throws Exception
 	{
-		Graph graph = GraphReader.readGraph("filename");
+		Graph graph = GraphReader.readGraph("./data.col");
 		// where filename is a DIMACS formatted graph file
 		int millisecondsperK = 1000;
 		int [] colors = Backtracking.colorGraph(graph, millisecondsperK);
@@ -29,7 +29,7 @@ public class APICallBacktracking
 		System.out.println("Colors of Vertices: ");
 		for(int i=0; i<colors.length; i++)
 		{
-		    System.out.print(colors[i] + " ");
+			System.out.print(graph.nodes[i].value + ":" + colors[i] + ",");
 		}
 
 	}
