@@ -1,32 +1,60 @@
 <h1>Testing the graph coloring code</h1>
 
 Please run <b>automatedtests.sh</b> in the tests directory to test the code.<br>
-(Please change the permissions of all .sh files to u+x i.e. run <b>chmod u+x *.sh</b>)
 
 Please follow the following steps to test the code:
 
+<b>Heuristics</b>
+
 <ol>
-<li>Use the data.col (queen9_9) file in this directory and copy it to the directory where the source code is</li>
-<li>Compile the Java code</li>
-<li>Run "java GraphColoring data.col" for the heuristic algorithms (test.sh)</li>
-<li>The algorithm should then follow a cascaded run of various steps:
+<li>Please run test.sh. The algorithm will then run a cascaded list of steps:
 <pre>
 Reading Graph...
 Computing Clique...
 Maximum Clique Size Found: 9
 Vertices in the Clique:
-22 18 21 25 20 19 26 23 24 
+4 13 49 67 40 31 76 58 22 
 
-47 milliseconds (excluding I/O).
+46 milliseconds (excluding I/O).
 15 coloring found using DSatur.
 Applying Iterated Greedy Improvement...
 Found Better Coloring - 12
-Applying Local Search...
 Found Better Coloring - 11
+Applying Local Search...
 Final Coloring of graph possible with 11 colors.
 Colors of Vertices: 
-2 4 1 5 9 11 7 8 6 9 10 6 7 2 ...</pre>
+11 1 9 6 10 2 7 8 3 ...
+Finished
+</pre>
 </li>
 <li>The coloring should be around 11 (it might vary as the algorithm is randomized)</li>
-<li>(Alternatively, run "java Backtracking data.col" for the backtracking algorithm (testbacktracking.sh))</li>
+</ol>
+
+<b>Backtracking</b>
+
+<ol>
+  <li>Please run testbacktracking.sh. The algorithm will try to color the graph with increasing values of k.
+  <pre>
+  Reading Graph...
+Computing Clique...
+Maximum Clique Size Found: 9
+Vertices in the Clique:
+22 13 49 67 40 31 76 58 4 
+
+55 milliseconds (excluding I/O).
+Trying to color graph with 9 colors...
+Trying to color graph with 10 colors...
+Trying to color graph with 11 colors...
+Trying to color graph with 12 colors...
+Trying to color graph with 13 colors...
+
+13 coloring found! Exiting...
+Colors of Vertices: 
+Final Coloring of graph possible with 13 colors.
+Colors of Vertices: 
+3 4 1 5 8 6 2 7 ....
+Finished
+  </pre>
+  </li>
+  <li>The coloring found will be slightly worse than using heuristics.</li>
 </ol>
