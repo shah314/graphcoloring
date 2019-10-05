@@ -36,8 +36,7 @@ Then, run the algorithm using any of the two methods:
 java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring -f data.col
 
 java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring
-usage: java -cp graphcoloring-1.7-jar-with-dependencies.jar
-            com.gcol.GraphColoring
+usage: java -cp graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring
  -f <arg>   The DIMACS formatted graph file name
  -h         This help message
  -help      This help message
@@ -50,8 +49,7 @@ usage: java -cp graphcoloring-1.7-jar-with-dependencies.jar
 java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking -f data.col
 
 java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking
-usage: java -cp graphcoloring-1.7-jar-with-dependencies.jar
-            com.gcol.Backtracking
+usage: java -cp graphcoloring-1.7-jar-with-dependencies.jar com.gcol.Backtracking
  -f <arg>   The DIMACS formatted graph file name
  -h         This help message
  -help      This help message
