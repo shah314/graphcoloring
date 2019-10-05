@@ -24,7 +24,7 @@ Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/
 </ol>
 
 <pre>
-<b>Maven</b> is needed to compile and pakage the code. 
+<b>Maven</b> is needed to compile and package the code. 
 For e.g. you might run <b>brew install maven</b> on a Mac.
 Compile the code using Maven:
 <b>mvn package</b>
