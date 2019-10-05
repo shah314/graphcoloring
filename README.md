@@ -1,4 +1,4 @@
-# Heuristic for Graph Coloring
+# GraphColoring: A Java package for solving the graph coloring problem (a heuristic)
 
 ## Shalin Shah
 
