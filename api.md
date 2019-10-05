@@ -1,8 +1,8 @@
-<h1>Using the code as an API</h1>
+# Using the code as an API
 
-Please include target/graphcoloring-1.7-jar-with-dependencies.jar in the classpath.
+## Please include target/graphcoloring-1.7-jar-with-dependencies.jar in the classpath.
 
-<h2>Heuristics</h2>
+## Heuristics
 
 ```Java
 
@@ -46,7 +46,7 @@ public class APICallHeuristics
 }
 ```
 
-<h2>Backtracking</h2>
+## Backtracking
 
 ```Java
 
