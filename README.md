@@ -24,10 +24,11 @@ Implementation of the DSatur[1] heuristics for <A href="http://en.wikipedia.org/
 </ol>
 
 <pre>
-Maven is needed to compile and pakage the code. For e.g. you might run <b>brew install maven</b> on a Mac.
+<b>Maven</b> is needed to compile and pakage the code. 
+For e.g. you might run <b>brew install maven</b> on a Mac.
 Compile the code using Maven:
-mvn package
-(Please ignore the compilation warning, it is because the code does not use generics)
+<b>mvn package</b>
+(Please ignore the compilation warnings, it is because the code does not use generics)
 
 Then, run the algorithm using any of the two methods:
 
@@ -52,7 +53,7 @@ java -cp target/graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColori
 
 If you need help, please open an issue.
 
-<b>If you want to call the code as an API, please see <a href="api.md">API.md</a>.</b>
+<b>If you want to call the code as an API, please see <a href="api.md">api.md</a>.</b>
 </pre>
 
 <p>
