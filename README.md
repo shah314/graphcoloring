@@ -15,8 +15,11 @@ The heuristic follows the following steps:
 	Improve the coloring using Iterated Greedy techniques [2]
 	Improve the coloring using min-conflicts local search
 	Report the coloring
+	
+[1]"New methods to color the vertices of a graph", Brelaz D., CACM 22(4) pp 251--256
+[2]"Iterated Greedy graph coloring and the difficulty landscape", Culberson J
 
-Maven is needed to compile and package the code. 
+### Maven is needed to compile and package the code. 
 For e.g. you might run "brew install maven" on a Mac.
 Compile the code using Maven:
 
@@ -68,10 +71,6 @@ If you need to run the algorithm for very large graphs, please consider setting 
 If you need help, please open an issue.
 
 ### If you want to call the code as an API, please see [API](api.md).
-
-[1]"New methods to color the vertices of a graph", Brelaz D., CACM 22(4) pp 251--256
-
-[2]"Iterated Greedy graph coloring and the difficulty landscape", Culberson J
 
 ### Cited By:
 
