@@ -17,6 +17,7 @@ The heuristic follows the following steps:
 	Report the coloring
 	
 [1]"New methods to color the vertices of a graph", Brelaz D., CACM 22(4) pp 251--256
+
 [2]"Iterated Greedy graph coloring and the difficulty landscape", Culberson J
 
 ### Maven is needed to compile and package the code. 
