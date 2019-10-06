@@ -39,7 +39,7 @@ public class APICallHeuristics
 		System.out.println("Colors of Vertices: ");
 		for(int i=0; i<colors.length; i++)
 		{
-		    System.out.print(graph.nodes[i].value + ":" + colors[i] + ",");
+		    System.out.print((graph.nodes[i].value+1) + ":" + colors[i] + ",");
 		}
 
 	}
@@ -80,7 +80,7 @@ public class APICallBacktracking
 		System.out.println("Colors of Vertices: ");
 		for(int i=0; i<colors.length; i++)
 		{
-			System.out.print(graph.nodes[i].value + ":" + colors[i] + ",");
+			System.out.print((graph.nodes[i].value+1) + ":" + colors[i] + ",");
 		}
 
 	}
