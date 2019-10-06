@@ -3,7 +3,7 @@ import com.gcol.Backtracking;
 import com.gcol.GraphReader;
 import com.gcol.Graph;
 
-public class APICallBacktracking 
+public class APICallBacktracking
 {
 	public static void main(String [] args) throws Exception
 	{
@@ -24,12 +24,12 @@ public class APICallBacktracking
 		        maxColor = colors[i];
 		    }
 		}
-		        
+
 		System.out.println("Final Coloring of graph possible with " + maxColor + " colors.");
 		System.out.println("Colors of Vertices: ");
 		for(int i=0; i<colors.length; i++)
 		{
-			System.out.print(graph.nodes[i].value + ":" + colors[i] + ",");
+			System.out.print((graph.nodes[i].value+1) + ":" + colors[i] + ",");
 		}
 
 	}
