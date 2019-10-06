@@ -1,13 +1,12 @@
-
 import com.gcol.GraphColoring;
 import com.gcol.GraphReader;
 import com.gcol.Graph;
 
-public class APICallHeuristics
+public class APICallHeuristics 
 {
 	public static void main(String [] args) throws Exception
 	{
-		Graph graph = GraphReader.readGraph("./data.col");
+		Graph graph = GraphReader.readGraph("data.col");
 		// where filename is a DIMACS formatted graph file
 		boolean localsearch = true;
 		int iteratedgreedyiterations = 1000;
@@ -27,7 +26,7 @@ public class APICallHeuristics
 		        maxColor = colors[i];
 		    }
 		}
-
+		        
 		System.out.println("Final Coloring of graph possible with " + maxColor + " colors.");
 		System.out.println("Colors of Vertices: ");
 		for(int i=0; i<colors.length; i++)
