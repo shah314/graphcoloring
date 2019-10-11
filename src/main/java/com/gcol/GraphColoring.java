@@ -46,26 +46,26 @@ public class GraphColoring {
     	Option o7 = new Option("h", false, "This help message");
     	o7.setRequired(false);
     	options.addOption(o7);
-    	
+
     	CommandLineParser parser = new DefaultParser();
     	CommandLine cmd = parser.parse( options, args);
-    	
-    	if (!cmd.hasOption("f") || cmd.hasOption("help") || cmd.hasOption("h")) 
+
+    	if (!cmd.hasOption("f") || cmd.hasOption("help") || cmd.hasOption("h"))
     	{
             HelpFormatter helpFormatter = new HelpFormatter();
             helpFormatter.printHelp("java -cp graphcoloring-1.7-jar-with-dependencies.jar com.gcol.GraphColoring", options);
             System.exit(0);
     	}
-    	
+
     	String filename = cmd.getOptionValue("f");
     	boolean localsearch = Boolean.parseBoolean(cmd.getOptionValue("l", "true"));
     	int numiteratedgreedy = Integer.parseInt(cmd.getOptionValue("i", "1000"));
     	int numlocalsearch = Integer.parseInt(cmd.getOptionValue("j", "1000"));
     	int numlocaltime = Integer.parseInt(cmd.getOptionValue("m", "1000"));
-    	
+
     	System.out.println("Reading Graph...");
         Graph graph = GraphReader.readGraph(filename);
-        
+
         int [] colors = colorGraph(graph, localsearch, numiteratedgreedy, numlocalsearch, numlocaltime);
         int maxColor = -1;
         for(int i=0; i<colors.length; i++)
@@ -79,24 +79,24 @@ public class GraphColoring {
                 maxColor = colors[i];
             }
         }
-        
+
         System.out.println("Final Coloring of graph possible with " + maxColor + " colors.");
         System.out.println("Colors of Vertices: ");
         for(int i=0; i<colors.length; i++)
         {
             System.out.print(colors[i] + " ");
         }
-        
+
         System.out.println("\nFinished\n");
     }
-    
+
     public static int [] colorGraph(Graph graph, boolean localsearch, int iteratedgreedyiterations, int localsearchiterations, int localsearchtime) throws Exception
     {
     	Constants.LOCAL_SEARCH = localsearch;
     	Constants.ITERATED_GREEDY_ITERATIONS = iteratedgreedyiterations;
     	Constants.LOCAL_SEARCH_ITERATIONS = localsearchiterations;
     	Constants.LOCAL_SEARCH_MAX_TIME = localsearchtime;
-    	
+
         /* Compute Clique */
         LinkedHashSet clique = MaxClique.computeClique(graph);
 
@@ -189,6 +189,7 @@ public class GraphColoring {
 	        maxColor = -1;
 	        for(int i=0; i<colors.length; i++)
 	        {
+              graph.nodes[i].color = colors[i];
 	            if(maxColor == -1)
 	            {
 	                maxColor = colors[i];
@@ -199,7 +200,7 @@ public class GraphColoring {
 	            }
 	        }
         }
-        
+
         return colors;
     }
 
