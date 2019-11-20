@@ -1,5 +1,5 @@
 ---
-title: 'GraphColoring: A Java package for solving the graph coloring problem'
+title: 'GCOL: A Java package for solving the graph coloring problem'
 tags:
   - Java
   - graph coloring
