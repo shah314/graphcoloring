@@ -2,6 +2,8 @@
 
 ## Shalin Shah
 
+[![status](https://joss.theoj.org/papers/07cf7b3c7dc9037ad19f0b2ae81cde14/status.svg)](https://joss.theoj.org/papers/07cf7b3c7dc9037ad19f0b2ae81cde14)
+
 ![Three Coloring](threecoloring.jpg)
 
 Implementation of the DSatur[1] heuristics for graph coloring in Java. The algorithm is created with tha aim of obtaining the best coloring, irrespective of run time. If you need to speed up the algorithm, consider not using local search. Also, if you need help with this, please open an issue.
