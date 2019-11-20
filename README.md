@@ -1,4 +1,4 @@
-# GraphColoring: A Java package for solving the graph coloring problem (a heuristic)
+# JCOL: A Java package for solving the graph coloring problem
 
 ## Shalin Shah
 
