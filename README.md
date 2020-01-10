@@ -173,8 +173,8 @@ I ran [ColPack](https://github.com/CSCsw/ColPack) (DISTANCE_ONE) on some of the 
 
 About execution time, there are several parameters which can be used to control the run time. For instance, one could disable local search, or reduce the number of iterations and get a much better run time. On the inithx.i.3 instance with 621 vertices, this algorithm takes 2 seconds (without local search) and ColPack takes 45 milliseconds. But if the goal is to get a good enough coloring as fast as possible, the algorithm could be changed. Please open an issue if this is the case.
 
-||||||
-|--- |--- |--- |--- |--- |
+||||||||
+|--- |--- |--- |--- |--- |--- |--- |
 |DataSet|LARGEST_FIRST|SMALLEST_LAST|INCIDENCE_DEGREE|This Algorithm|ColPack(ms)|This Algorithm(ms)
 |fpsol2.i.3|30|30|30|30|32|
 |inithx.i.3|31|31|32|31|36|
