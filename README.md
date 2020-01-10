@@ -175,13 +175,13 @@ About execution time, there are several parameters which can be used to control 
 
 ||||||||
 |--- |--- |--- |--- |--- |--- |--- |
-|DataSet|LARGEST_FIRST|SMALLEST_LAST|INCIDENCE_DEGREE|This Algorithm|ColPack(ms)|This Algorithm(ms)
-|fpsol2.i.3|30|30|30|30|32|
-|inithx.i.3|31|31|32|31|36|
-|le450_5d|14|12|14|7|33|
-|mulsol.i.5|31|31|31|31|38|
-|zeroin.i.3|30|30|30|30|30|
-|games120|9|9|9|9|30|
-|miles750|32|31|32|31|31|
-|queen9_9|15|15|15|11|30|
-|myciel7|8|8|9|8|30|
+|DataSet|LARGEST_FIRST|SMALLEST_LAST|INCIDENCE_DEGREE|This Algorithm|ColPack(ms)|JCOL(ms)
+|fpsol2.i.3|30|30|30|30|32|430
+|inithx.i.3|31|31|32|31|36|457
+|le450_5d|14|12|14|7|33|361
+|mulsol.i.5|31|31|31|31|38|342
+|zeroin.i.3|30|30|30|30|30|332
+|games120|9|9|9|9|30|229
+|miles750|32|31|32|31|31|276
+|queen9_9|15|15|15|11|30|218
+|myciel7|8|8|9|8|30|569
