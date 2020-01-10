@@ -29,20 +29,18 @@ The problem of graph coloring can be solved using exact approaches like branch a
 
 I ran the ColPack solver [@gebremedhin2010colpack] on some of the benchmark instances. The results are at the bottom of the git README. To summarize, our method is as good or better on all the randomly chosen instances. On the queen9_9 and le450_5d instances, our method does better than ColPack. Also, our method is randomized and iterative. So it can be left running for a few hours to see if the coloring improves further (for large graphs with unknown chromatic numbers). The following table shows the results. The run time for 100 iterations is shown in the last column. This could be improved by decreasing the number of iterations and by disabling local search.
 
-\begin{center}
-\begin{tabular}
-DataSet&LARGEST_FIRST&SMALLEST_LAST&INCIDENCE_DEGREE&This Algorithm&ColPack(ms)&JCOL(ms)\\
-fpsol2.i.3&30&30&30&30&32&430\\
-inithx.i.3&31&31&32&31&36&457\\
-le450_5d&14&12&14&7&33&361\\
-mulsol.i.5&31&31&31&31&38&342\\
-zeroin.i.3&30&30&30&30&30&332\\
-games120&9&9&9&9&30&229\\
-miles750&32&31&32&31&31&276\\
-queen9_9&15&15&15&11&30&218\\
-myciel7&8&8&9&8&30&569\\
-\end{tabular}
-\end{center}
+||||||||
+|--- |--- |--- |--- |--- |--- |--- |
+|DataSet|LARGEST_FIRST|SMALLEST_LAST|INCIDENCE_DEGREE|This Algorithm|ColPack(ms)|JCOL(ms)
+|fpsol2.i.3|30|30|30|30|32|430
+|inithx.i.3|31|31|32|31|36|457
+|le450_5d|14|12|14|7|33|361
+|mulsol.i.5|31|31|31|31|38|342
+|zeroin.i.3|30|30|30|30|30|332
+|games120|9|9|9|9|30|229
+|miles750|32|31|32|31|31|276
+|queen9_9|15|15|15|11|30|218
+|myciel7|8|8|9|8|30|569
 
 This Java code uses the DSATUR [@brelaz1979new] heuristics along with iterated greedy heuristics [@culberson1992iterated] to color a graph. The DSATUR heuristic orders the nodes of a graph in non-increasing order of the degree of saturation. The degree of saturation is the number of colors found in the adjacency list of a node. The iterated greedy heuristics perform randomized ordering of the vertices to color them in that order. By randomizing this process, improvement can be found in successive iterations. The algorithm then uses min-conflicts local search to improve the coloring. The method is quite successful in finding good colorings of the majority of the publicly available data sets. Results can be found on the git page.
 
