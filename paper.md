@@ -27,11 +27,12 @@ The graph coloring problem aims at assigning colors to the nodes of a graph such
 
 The problem of graph coloring can be solved using exact approaches like branch and cut and using heuristics like this work. Exact algorithms are not suitable for very large instances like more than 500 vertices. This paper [@malaguti2010survey] surveys some of the algorithms that are exact and heuristic and find that the %gap for exact algorithms, even when allowed to run for 7200 seconds is quite large. This algorithm is able to solve several large instances, and finds the optimum chromatic number or at least a very close to optimum solution in a short amount of computational duration. When an exact algorithm is available and suitable, it is of course the preferred way as the solution can be provably optimal. But for very large graphs, this is often unsuitable because of the exponential complexity of NP-hard problems. Our heuristic can help in these cases. Results of our algorithm can be found on our git page (<https://github.com/shah314/graphcoloring>).
 
-I ran the ColPack solver [@gebremedhin2010colpack] on some of the benchmark instances. The results are at the bottom of the git README. To summarize, our method is as good or better on all the randomly chosen instances. On the queen9_9 and le450_5d instances, our method does better than ColPack. Also, our method is randomized and iterative. So it can be left running for a few hours to see if the coloring improves further (for large graphs with unknown chromatic numbers). The following table shows the results. The run time for 100 iterations is shown in the last column. This could be improved by decreasing the number of iterations and by disabling local search.
+I ran the ColPack solver [@gebremedhin2010colpack] on some of the benchmark instances. The results are at the bottom of the git README and in the below table. To summarize, our method is as good or better on all the randomly chosen instances. On the queen9_9 and le450_5d instances, our method does better than ColPack. Also, our method is randomized and iterative. So it can be left running for a few hours to see if the coloring improves further (for large graphs with unknown chromatic numbers). The following table shows the results of the coloring. The run time for JCOL for 100 iterations is shown in the last column (milliseconds). This could be improved by decreasing the number of iterations and by disabling local search.
 
 ||||||||
 |--- |--- |--- |--- |--- |--- |--- |
 |DataSet|LARGEST FIRST|SMALLEST LAST|INCIDENCE DEGREE|This Algorithm|ColPack(ms)|JCOL(ms)
+|--- |--- |--- |--- |--- |--- |--- |
 |fpsol2.i.3|30|30|30|30|32|430
 |inithx.i.3|31|31|32|31|36|457
 |le450_5d|14|12|14|7|33|361
