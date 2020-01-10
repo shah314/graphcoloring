@@ -171,7 +171,9 @@ If you need help, please open an issue.
 
 I ran [ColPack](https://github.com/CSCsw/ColPack) (DISTANCE_ONE) on some of the publicly available data sets for comparison. The results are in the following table. On all of the instances, our algorithm is as good or better than the ColPack implementations. On the le450_5d and the queen9_9 instances, our method is able to achieve a better coloring of the graphs. 
 
-About execution time, there are several parameters which can be used to control the run time. For instance, one could disable local search, or reduce the number of iterations and get a much better run time. On the inithx.i.3 instance with 621 vertices, this algorithm takes 2 seconds (without local search) and ColPack takes 45 milliseconds. But if the goal is to get a good enough coloring as fast as possible, the algorithm could be changed. Please open an issue if this is the case.
+About execution time, there are several parameters which can be used to control the run time. For instance, one could disable local search, or reduce the number of iterations and get a much better run time. On the inithx.i.3 instance with 621 vertices, this algorithm takes 2 seconds (1000 iterations, without local search) and ColPack takes 45 milliseconds. But if the goal is to get a good enough coloring as fast as possible, the algorithm could be changed. Please open an issue if this is the case.
+
+The following table shows the results and the time it takes for JCOL (100 iterations, no local search) and ColPack on some benchmarks.
 
 ||||||||
 |--- |--- |--- |--- |--- |--- |--- |
