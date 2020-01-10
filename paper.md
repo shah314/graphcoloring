@@ -31,16 +31,16 @@ I ran the ColPack solver [@gebremedhin2010colpack] on some of the benchmark inst
 
 \begin{center}
 \begin{tabular}
-DataSet&LARGEST_FIRST&SMALLEST_LAST&INCIDENCE_DEGREE&This Algorithm&ColPack(ms)&JCOL(ms)
-fpsol2.i.3&30&30&30&30&32&430
-inithx.i.3&31&31&32&31&36&457
-le450_5d&14&12&14&7&33&361
-mulsol.i.5&31&31&31&31&38&342
-zeroin.i.3&30&30&30&30&30&332
-games120&9&9&9&9&30&229
-miles750&32&31&32&31&31&276
-queen9_9&15&15&15&11&30&218
-myciel7&8&8&9&8&30&569
+DataSet&LARGEST_FIRST&SMALLEST_LAST&INCIDENCE_DEGREE&This Algorithm&ColPack(ms)&JCOL(ms)\\
+fpsol2.i.3&30&30&30&30&32&430\\
+inithx.i.3&31&31&32&31&36&457\\
+le450_5d&14&12&14&7&33&361\\
+mulsol.i.5&31&31&31&31&38&342\\
+zeroin.i.3&30&30&30&30&30&332\\
+games120&9&9&9&9&30&229\\
+miles750&32&31&32&31&31&276\\
+queen9_9&15&15&15&11&30&218\\
+myciel7&8&8&9&8&30&569\\
 \end{tabular}
 \end{center}
 
