@@ -177,7 +177,7 @@ The following table shows the results and the time it takes for JCOL (100 iterat
 
 ||||||||
 |--- |--- |--- |--- |--- |--- |--- |
-|DataSet|LARGEST_FIRST|SMALLEST_LAST|INCIDENCE_DEGREE|This Algorithm|ColPack(ms)|JCOL(ms)
+|DataSet|LARGEST FIRST|SMALLEST LAST|INCIDENCE DEGREE|This Algorithm|ColPack(ms)|JCOL(ms)
 |fpsol2.i.3|30|30|30|30|32|430
 |inithx.i.3|31|31|32|31|36|457
 |le450_5d|14|12|14|7|33|361
