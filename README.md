@@ -84,55 +84,55 @@ If you need help, please open an issue.
 ### The algorithm was run on a few [benchmark instances](https://mat.tepper.cmu.edu/COLOR/instances.html) and the results are shown in the following table. The algorithm was run 10 times and the best and the worst results are shown.
 
 ||||||
-|--- |--- |--- |--- |--- |
-|Instance|Vertices|Optimum|Found - Best|Found - Worst|
-|fpsol2.i.1|496|65|65|65|
-|fpsol2.i.2|451|30|30|30|
-|fpsol2.i.3|425|30|30|30|
-|inithx.i.1|864|54|54|54|
-|inithx.i.2|645|31|31|31|
-|inithx.i.3|621|31|31|31|
-|*latin_square_10|900|-|124|125|
-|le450_15b|450|15|18|18|
-|le450_15c|450|15|25|25|
-|le450_5a|450|5|6|6|
-|le450_5b|450|5|7|7|
-|le450_5c|450|5|7|7|
-|le450_5d|450|5|7|8|
-|mulsol.i.1|197|49|49|49|
-|mulsol.i.2|188|31|31|31|
-|mulsol.i.3|184|31|31|31|
-|mulsol.i.4|185|31|31|31|
-|mulsol.i.5|186|31|31|31|
-|school1|385|-|15|15|
-|school1_nsh|352|-|15|15|
-|zeroin.i.1|211|49|49|49|
-|zeroin.i.2|211|30|30|30|
-|zeroin.i.3|206|30|30|30|
-|anna|138|11|11|11|
-|david|87|11|11|11|
-|homer|561|13|13|13|
-|huck|74|11|11|11|
-|jean|80|10|10|10|
-|games120|120|9|9|9|
-|miles1000|128|42|42|42|
-|miles1500|128|73|73|73|
-|miles250|128|8|8|8|
-|miles500|128|20|20|20|
-|miles750|128|31|31|31|
-|queen11_11|121|11|14|14|
-|queen13_13|169|13|16|16|
-|queen5_5|25|5|5|5|
-|queen6_6|36|7|7|7|
-|queen7_7|49|7|7|7|
-|queen8_12|96|12|13|13|
-|queen8_8|64|9|10|10|
-|queen9_9|81|10|11|11|
-|myciel3|11|4|4|4|
-|myciel4|23|5|5|5|
-|myciel5|47|6|6|6|
-|myciel6|95|7|7|7|
-|myciel7|191|8|8|8|
+|--- |--- |--- |--- |--- |--- |
+|Instance|Vertices|Optimum|Found - Best|Found - Worst|Edges
+|fpsol2.i.1|496|65|65|65|11654|
+|fpsol2.i.2|451|30|30|30|8691|
+|fpsol2.i.3|425|30|30|30|8688|
+|inithx.i.1|864|54|54|54|18707|
+|inithx.i.2|645|31|31|31|13979|
+|inithx.i.3|621|31|31|31|13969|
+|*latin_square_10|900|-|124|125|307350|
+|le450_15b|450|15|18|18|8169|
+|le450_15c|450|15|25|25|16680|
+|le450_5a|450|5|6|6|5714|
+|le450_5b|450|5|7|7|5734|
+|le450_5c|450|5|7|7|9803|
+|le450_5d|450|5|7|8|9757|
+|mulsol.i.1|197|49|49|49|3925|
+|mulsol.i.2|188|31|31|31|3885|
+|mulsol.i.3|184|31|31|31|3916|
+|mulsol.i.4|185|31|31|31|3946|
+|mulsol.i.5|186|31|31|31|3973|
+|school1|385|-|15|15|19095|
+|school1_nsh|352|-|15|15|14612|
+|zeroin.i.1|211|49|49|49|4100|
+|zeroin.i.2|211|30|30|30|3541|
+|zeroin.i.3|206|30|30|30|3540|
+|anna|138|11|11|11|493|
+|david|87|11|11|11|406|
+|homer|561|13|13|13|1629|
+|huck|74|11|11|11|301|
+|jean|80|10|10|10|254|
+|games120|120|9|9|9|638|
+|miles1000|128|42|42|42|3216|
+|miles1500|128|73|73|73|5198|
+|miles250|128|8|8|8|387|
+|miles500|128|20|20|20|1170|
+|miles750|128|31|31|31|2113|
+|queen11_11|121|11|14|14|3960|
+|queen13_13|169|13|16|16|6656|
+|queen5_5|25|5|5|5|160|
+|queen6_6|36|7|7|7|290|
+|queen7_7|49|7|7|7|476|
+|queen8_12|96|12|13|13|1368|
+|queen8_8|64|9|10|10|728|
+|queen9_9|81|10|11|11|2112|
+|myciel3|11|4|4|4|20|
+|myciel4|23|5|5|5|71|
+|myciel5|47|6|6|6|236|
+|myciel6|95|7|7|7|755|
+|myciel7|191|8|8|8|2360|
   
 * The algorithm was terminated before local search
 
