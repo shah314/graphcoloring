@@ -81,7 +81,7 @@ If you need help, please open an issue.
 2) [https://github.com/smirarab/binning/](https://github.com/smirarab/binning/)
 3) Ahmad Muklason, Hyper-heuristics and Fairness in Examination Timetabling Problems
 
-### The algorithm was run on a few [benchmark instances](https://mat.tepper.cmu.edu/COLOR/instances.html) and the results are shown in the following table.
+### The algorithm was run on a few [benchmark instances](https://mat.tepper.cmu.edu/COLOR/instances.html) and the results are shown in the following table. The algorithm was run 10 times and the best and the worst results are shown.
 
 ||||||
 |--- |--- |--- |--- |--- |
