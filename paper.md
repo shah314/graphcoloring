@@ -32,6 +32,7 @@ I ran the ColPack solver [@gebremedhin2010colpack] on some of the benchmark inst
 ||||||||
 |--- |--- |--- |--- |--- |--- |--- |
 |DataSet|LARGEST FIRST|SMALLEST LAST|INCIDENCE DEGREE|This Algorithm|ColPack(ms)|JCOL(ms)
+|--- |--- |--- |--- |--- |--- |--- |
 |fpsol2.i.3|30|30|30|30|32|430
 |inithx.i.3|31|31|32|31|36|457
 |le450_5d|14|12|14|7|33|361
@@ -41,6 +42,8 @@ I ran the ColPack solver [@gebremedhin2010colpack] on some of the benchmark inst
 |miles750|32|31|32|31|31|276
 |queen9_9|15|15|15|11|30|218
 |myciel7|8|8|9|8|30|569
+|--- |--- |--- |--- |--- |--- |--- |
+|GeometricMean|19.55|19.15|19.88|17.43| | 
 
 This Java code uses the DSATUR [@brelaz1979new] heuristics along with iterated greedy heuristics [@culberson1992iterated] to color a graph. The DSATUR heuristic orders the nodes of a graph in non-increasing order of the degree of saturation. The degree of saturation is the number of colors found in the adjacency list of a node. The iterated greedy heuristics perform randomized ordering of the vertices to color them in that order. By randomizing this process, improvement can be found in successive iterations. The algorithm then uses min-conflicts local search to improve the coloring. The method is quite successful in finding good colorings of the majority of the publicly available data sets. Results can be found on the git page.
 
