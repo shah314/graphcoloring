@@ -83,7 +83,7 @@ If you need help, please open an issue.
 
 ### The algorithm was run on a few [benchmark instances](https://mat.tepper.cmu.edu/COLOR/instances.html) and the results are shown in the following table. The algorithm was run 10 times and the best and the worst results are shown.
 
-||||||
+|||||||
 |--- |--- |--- |--- |--- |--- |
 |Instance|Vertices|Optimum|Found - Best|Found - Worst|Edges
 |fpsol2.i.1|496|65|65|65|11654|
