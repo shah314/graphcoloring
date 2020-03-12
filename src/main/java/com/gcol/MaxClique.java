@@ -29,7 +29,7 @@ public class MaxClique
             SortedListNode node = (SortedListNode)ittt.next();
             if(clique.pa.contains(node.node))
             {
-                clique.addVertex(node.node, graph.aMatrix);
+                clique.addVertex(node.node);
             }
         }
         
@@ -67,8 +67,8 @@ public class MaxClique
                 rand2 = (int)(Math.random() * (double)clique.clique.size());
                 vertex2 = ((Integer)clique.cliqueList.get(rand2)).intValue();
             }
-            clique.removeVertex(vertex1, graph.aMatrix);
-            clique.removeVertex(vertex2, graph.aMatrix);
+            clique.removeVertex(vertex1);
+            clique.removeVertex(vertex2);
             
             /* Add vertices to the clique based on the sorted possible additions TreeSet */
             if(clique.pa.size() > 0)
@@ -80,7 +80,7 @@ public class MaxClique
                     SortedListNode node = (SortedListNode)itt.next();
                     if(clique.pa.contains(new Integer(node.node)))
                     {
-                        clique.addVertex(node.node, graph.aMatrix);
+                        clique.addVertex(node.node);
                     }
                 }
             }
@@ -117,7 +117,7 @@ public class MaxClique
             for(int i=0; i<clique.clique.size(); i++)
             {
                 int vertex = ((Integer)clique.cliqueList.get(i)).intValue();
-                clique.removeVertex(vertex, graph.aMatrix);
+                clique.removeVertex(vertex);
                 List sortedList = clique.computeSortedList();
                 Iterator it = sortedList.iterator();
                 while(clique.pa.size() > 0)
@@ -126,7 +126,7 @@ public class MaxClique
                     SortedListNode node = (SortedListNode)it.next();
                     if(clique.pa.contains(new Integer(node.node)))
                     {
-                        clique.addVertex(node.node, graph.aMatrix);
+                        clique.addVertex(node.node);
                     }
                 }
                 
@@ -189,7 +189,7 @@ public class MaxClique
             SortedListNode node  =(SortedListNode)it.next();
             if(clq.pa.contains(new Integer(node.node)))
             {
-                clq.addVertex(node.node, graph.aMatrix);
+                clq.addVertex(node.node);
             }
         }
         

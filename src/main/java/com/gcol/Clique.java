@@ -28,7 +28,6 @@ public class Clique
     /** Creates a new instance of Clique */
     public Clique(int firstVertex, Graph graph) 
     {
-        int [][] aMatrix = graph.aMatrix;
         pa = new LinkedHashSet();
         clique = new LinkedHashSet();
         sortedPA = new TreeMap();
@@ -44,7 +43,7 @@ public class Clique
                 continue;
             }
             
-            if(aMatrix[i][firstVertex] == 1)
+            if(getEdge(i, firstVertex, graph) == 1)
             {
                 pa.add(new Integer(i));
                 sortedPA.put(graph.nodes[i], graph.nodes[i]);
@@ -52,10 +51,24 @@ public class Clique
         }   
     }
     
+    /*
+     * Get an edge from the graph 
+     */
+    public static int getEdge(int i, int j, Graph graph)
+    {
+    	Node node = graph.nodes[i];
+    	if(node.list.contains(j))
+    	{
+    		return 1;
+    	}
+    	
+    	return 0;
+    }
+    
     /* 
      * Add a vertex to the clique and update the possible additions list.
      */
-    public void addVertex(int vertex, int [][] aMatrix)
+    public void addVertex(int vertex)
     {
         clique.add(new Integer(vertex));
         cliqueList.add(new Integer(vertex));
@@ -64,12 +77,12 @@ public class Clique
         for(Iterator it = pa.iterator(); it.hasNext();)
         {
             int pavertex = ((Integer)it.next()).intValue();
-            if(aMatrix[pavertex][vertex] == 0)
+            if(getEdge(pavertex, vertex, graph) == 0)
             {
                 it.remove();
                 removeFromSortedPA(graph.nodes[pavertex]);
             }
-            else if(aMatrix[pavertex][vertex] == 1)
+            else if(getEdge(pavertex, vertex, graph) == 1)
             {
                 // do nothing
             }
@@ -84,7 +97,7 @@ public class Clique
     /* 
      * Remove a vertex from the clique and update the possible additions list.
      */
-    public void removeVertex(int vertex, int [][]aMatrix)
+    public void removeVertex(int vertex)
     {
         if(!clique.contains(new Integer(vertex)))
             return;
@@ -104,7 +117,7 @@ public class Clique
                 while(it.hasNext())
                 {
                     int ver = ((Integer)it.next()).intValue();
-                    if(aMatrix[i][ver] == 0)
+                    if(getEdge(i, ver, graph) == 0)
                     {
                         flag = false;
                         break;
@@ -151,7 +164,7 @@ public class Clique
             while(itt.hasNext())
             {
                 int node2 = ((Integer)itt.next()).intValue();
-                if(graph.aMatrix[node1][node2] == 1)
+                if(getEdge(node1, node2, graph) == 1)
                 {
                     reach++;
                 }

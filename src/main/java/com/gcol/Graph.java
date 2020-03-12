@@ -12,14 +12,12 @@ import java.io.*;
  */
 public class Graph {
     
-    public int [][] aMatrix;
     public  Node [] sortedNodes;
     public Node [] nodes;
     
     /** Creates a new instance of Graph */
     public Graph() 
     {
-        aMatrix = new int[Constants.NUMBER_NODES][Constants.NUMBER_NODES];
         sortedNodes = new Node[Constants.NUMBER_NODES];
         nodes = new Node[Constants.NUMBER_NODES];
         for(int i=0; i<Constants.NUMBER_NODES; i++)
@@ -44,8 +42,6 @@ public class Graph {
     /* Add an edge to this graph */
     public void addEdge(int sv, int ev)
     {
-        aMatrix[sv][ev] = 1;
-        aMatrix[ev][sv] = 1;
         Node node = nodes[sv];
         if(node == null)
         {
