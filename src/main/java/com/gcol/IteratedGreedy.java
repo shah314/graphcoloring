@@ -14,7 +14,7 @@ public class IteratedGreedy {
     public IteratedGreedy() {
     }
     
-    public static int [] iteratedGreedy(int k, Graph graph)
+    public static int [] iteratedGreedy(int k, Graph graph, boolean verbose)
     {
         int [] colors = new int[graph.nodes.length];
         
@@ -93,7 +93,10 @@ public class IteratedGreedy {
             
             if(maxColor < k)
             {
-                System.out.println("Found Better Coloring - " + maxColor);
+            	if(verbose)
+            	{
+            		System.out.println("Found Better Coloring - " + maxColor);
+            	}
                 k = maxColor;
                 for(int j=0; j<colors.length; j++)
                 {

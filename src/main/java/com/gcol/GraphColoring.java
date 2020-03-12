@@ -46,7 +46,10 @@ public class GraphColoring {
     	Option o7 = new Option("h", false, "This help message");
     	o7.setRequired(false);
     	options.addOption(o7);
-
+    	Option o8 = new Option("v", true, "Verbose");
+    	o8.setRequired(false);
+    	options.addOption(o8);
+    	
     	CommandLineParser parser = new DefaultParser();
     	CommandLine cmd = parser.parse( options, args);
 
@@ -65,8 +68,13 @@ public class GraphColoring {
 
     	System.out.println("Reading Graph...");
         Graph graph = GraphReader.readGraph(filename);
-
-        int [] colors = colorGraph(graph, localsearch, numiteratedgreedy, numlocalsearch, numlocaltime);
+        boolean verbose = false;
+        if(cmd.hasOption("v"))
+        {
+        	verbose = Boolean.parseBoolean(cmd.getOptionValue("v"));
+        }
+        
+        int [] colors = colorGraph(graph, localsearch, numiteratedgreedy, numlocalsearch, numlocaltime, verbose);
         int maxColor = -1;
         for(int i=0; i<colors.length; i++)
         {
@@ -90,7 +98,7 @@ public class GraphColoring {
         System.out.println("\nFinished\n");
     }
 
-    public static int [] colorGraph(Graph graph, boolean localsearch, int iteratedgreedyiterations, int localsearchiterations, int localsearchtime) throws Exception
+    public static int [] colorGraph(Graph graph, boolean localsearch, int iteratedgreedyiterations, int localsearchiterations, int localsearchtime, boolean verbose) throws Exception
     {
     	Constants.LOCAL_SEARCH = localsearch;
     	Constants.ITERATED_GREEDY_ITERATIONS = iteratedgreedyiterations;
@@ -167,7 +175,7 @@ public class GraphColoring {
         System.out.println(k + " coloring found using DSatur.");
         System.out.println("Applying Iterated Greedy Improvement...");
 
-        int [] colors = IteratedGreedy.iteratedGreedy(k, graph);
+        int [] colors = IteratedGreedy.iteratedGreedy(k, graph, verbose);
         int maxColor = -1;
         for(int i=0; i<colors.length; i++)
         {
@@ -185,7 +193,7 @@ public class GraphColoring {
         if(Constants.LOCAL_SEARCH)
         {
 	        System.out.println("Applying Local Search...");
-	        colors = LocalSearch.localSearch(graph, maxColor);
+	        colors = LocalSearch.localSearch(graph, maxColor, verbose);
 	        maxColor = -1;
 	        for(int i=0; i<colors.length; i++)
 	        {

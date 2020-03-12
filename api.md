@@ -10,7 +10,7 @@ import com.gcol.GraphColoring;
 import com.gcol.GraphReader;
 import com.gcol.Graph;
 
-public class APICallHeuristics 
+public class APICallHeuristics
 {
 	public static void main(String [] args) throws Exception
 	{
@@ -20,7 +20,7 @@ public class APICallHeuristics
 		int iteratedgreedyiterations = 1000;
 		int localsearchiterations = 1000;
 		int localsearchtimeinmilliseconds = 1000;
-		int [] colors = GraphColoring.colorGraph(graph, localsearch, iteratedgreedyiterations, localsearchiterations, localsearchtimeinmilliseconds);
+		int [] colors = GraphColoring.colorGraph(graph, localsearch, iteratedgreedyiterations, localsearchiterations, localsearchtimeinmilliseconds, false);
 
 		int maxColor = -1;
 		for(int i=0; i<colors.length; i++)
@@ -34,7 +34,7 @@ public class APICallHeuristics
 		        maxColor = colors[i];
 		    }
 		}
-		        
+
 		System.out.println("Final Coloring of graph possible with " + maxColor + " colors.");
 		System.out.println("Colors of Vertices: ");
 		for(int i=0; i<colors.length; i++)
@@ -54,14 +54,14 @@ import com.gcol.Backtracking;
 import com.gcol.GraphReader;
 import com.gcol.Graph;
 
-public class APICallBacktracking 
+public class APICallBacktracking
 {
 	public static void main(String [] args) throws Exception
 	{
 		Graph graph = GraphReader.readGraph("filename");
 		// where filename is a DIMACS formatted graph file
 		int millisecondsperK = 1000;
-		int [] colors = Backtracking.colorGraph(graph, millisecondsperK);
+		int [] colors = Backtracking.colorGraph(graph, millisecondsperK, false);
 
 		int maxColor = -1;
 		for(int i=0; i<colors.length; i++)
@@ -75,7 +75,7 @@ public class APICallBacktracking
 		        maxColor = colors[i];
 		    }
 		}
-		        
+
 		System.out.println("Final Coloring of graph possible with " + maxColor + " colors.");
 		System.out.println("Colors of Vertices: ");
 		for(int i=0; i<colors.length; i++)

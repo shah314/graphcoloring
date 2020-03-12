@@ -14,7 +14,7 @@ public class LocalSearch
      * by reducing one color and then trying to remove the conflicts
      * using the min-conflicts heuristic
      */
-    public static int [] localSearch(Graph graph, int k)
+    public static int [] localSearch(Graph graph, int k, boolean verbose)
     {
         long startTime = System.currentTimeMillis();
         int [] coloring = new int[graph.nodes.length];
@@ -58,7 +58,11 @@ public class LocalSearch
                 
                 if(conflicts.size() == 0)
                 {
-                    System.out.println("Found Better Coloring - " + maxColor);
+                	if(verbose)
+                	{
+                		System.out.println("Found Better Coloring - " + maxColor);
+                	}
+                	
                     flag = true;
                     for(int i=0; i<coloring.length; i++)
                     {

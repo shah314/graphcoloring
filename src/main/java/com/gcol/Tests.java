@@ -11,7 +11,7 @@ public class Tests {
 	public static void heuristicsTest() throws Exception
 	{
 		Graph graph = GraphReader.readGraph("./data.col");
-		int [] colors = GraphColoring.colorGraph(graph, true, 1000, 1000, 1000);
+		int [] colors = GraphColoring.colorGraph(graph, true, 1000, 1000, 1000, false);
 		int maxColor = -1;
         for(int i=0; i<colors.length; i++)
         {
@@ -45,7 +45,7 @@ public class Tests {
 	public static void backtrackingTest() throws Exception
 	{
 		Graph graph = GraphReader.readGraph("./data.col");
-		int [] colors = Backtracking.colorGraph(graph, 1000);
+		int [] colors = Backtracking.colorGraph(graph, 1000, false);
 		int maxColor = -1;
         for(int i=0; i<colors.length; i++)
         {

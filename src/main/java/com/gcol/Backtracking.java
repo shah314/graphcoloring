@@ -40,9 +40,14 @@ public class Backtracking {
     	Option o6 = new Option("help", false, "This help message");
     	o6.setRequired(false);
     	options.addOption(o6);
+    	
     	Option o7 = new Option("h", false, "This help message");
     	o7.setRequired(false);
     	options.addOption(o7);
+    	
+    	Option o8 = new Option("v", true, "Verbose");
+    	o8.setRequired(false);
+    	options.addOption(o8);
     	
     	CommandLineParser parser = new DefaultParser();
     	CommandLine cmd = parser.parse( options, args);
@@ -60,7 +65,13 @@ public class Backtracking {
         /* Read the graph from Constants.FILE */
         Graph graph = GraphReader.readGraph(filename);
         
-        int [] colors = colorGraph(graph, milliseconds);
+        boolean verbose = false;
+        if(cmd.hasOption("v"))
+        {
+        	verbose = Boolean.parseBoolean(cmd.getOptionValue("v"));
+        }
+        
+        int [] colors = colorGraph(graph, milliseconds, verbose);
         int maxColor = -1;
         for(int i=0; i<colors.length; i++)
         {
@@ -84,7 +95,7 @@ public class Backtracking {
         System.out.println("\nFinished\n");
     }
     
-    public static int [] colorGraph(Graph graph, int milliseconds) throws Exception
+    public static int [] colorGraph(Graph graph, int milliseconds, boolean verbose) throws Exception
     {
     	Constants.TIME = milliseconds;
     	
@@ -147,7 +158,11 @@ public class Backtracking {
             Node current = (Node)uncoloredNodes.get(0);
             Node last = (Node)uncoloredNodes.get(uncoloredNodes.size()-1);
             boolean solved = false;
-            System.out.println("Trying to color graph with " + k + " colors...");
+            if(verbose)
+            {
+            	System.out.println("Trying to color graph with " + k + " colors...");
+            }
+            
             long startTime = System.currentTimeMillis();
             while(true)
             {
