@@ -56,8 +56,7 @@ public class Clique
      */
     public static int getEdge(int i, int j, Graph graph)
     {
-    	Node node = graph.nodes[i];
-    	if(node.list.contains(j))
+    	if(graph.nodes[i].list.contains(j))
     	{
     		return 1;
     	}

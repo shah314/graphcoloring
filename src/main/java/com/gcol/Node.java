@@ -182,13 +182,9 @@ public class Node implements Comparable
         return conflicts;
     }
     
-    
     public int hashCode()
     {
-        StringBuffer buffer = new StringBuffer("");
-        buffer.append(value);
-        buffer.append(" ");
-        buffer.append(degree);
-        return new String(buffer.toString()).hashCode();
+    	Integer i = new Integer(value);
+    	return i.hashCode();
     }
 }
