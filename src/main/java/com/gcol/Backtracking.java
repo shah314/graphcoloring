@@ -45,7 +45,7 @@ public class Backtracking {
     	o7.setRequired(false);
     	options.addOption(o7);
     	
-    	Option o8 = new Option("v", true, "Verbose");
+    	Option o8 = new Option("v", true, "Verbose true/false");
     	o8.setRequired(false);
     	options.addOption(o8);
     	
