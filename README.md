@@ -45,6 +45,7 @@ Then, run the algorithm using any of the two methods:
 	 -j <arg>   Number of local search iterations
 	 -l <arg>   Enable local search true/false
 	 -m <arg>   Number of milliseconds to spend on local search
+	 -v <arg>   Verbose true/false
 
 ### Backtracking
 
@@ -56,6 +57,7 @@ Then, run the algorithm using any of the two methods:
 	 -h         This help message
 	 -help      This help message
 	 -t <arg>   Number of milliseconds to spend on each value of k
+	 -v <arg>   Verbose true/false
 
 Please remove all comments (lines starting with a 'c') and other extraneous text from the file.
 
