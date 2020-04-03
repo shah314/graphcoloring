@@ -22,6 +22,21 @@ The heuristic follows the following steps:
 
 [2]"Iterated Greedy graph coloring and the difficulty landscape", Culberson J
 
+### Cite this work
+	@article{shah2020jcol,
+	  doi = {10.21105/joss.01843},
+	  url = {https://doi.org/10.21105/joss.01843},
+	  year = {2020},
+	  publisher = {The Open Journal},
+	  volume = {5},
+	  number = {48},
+	  pages = {1843},
+	  author = {Shalin Shah},
+	  title = {JCOL: A Java package for solving the graph coloring problem},
+	  journal = {Journal of Open Source Software}
+	}
+
+
 ### Maven is needed to compile and package the code. 
 For e.g. you might run "brew install maven" on a Mac.
 Compile the code using Maven:
