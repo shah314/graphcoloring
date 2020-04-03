@@ -21,13 +21,13 @@ bibliography: paper.bib
 
 # Summary
 
+The graph coloring problem aims at assigning colors to the nodes of a graph such that no two connected nodes have the same color. The graph coloring problem is NP-complete and one of the harder problems to solve. Here we present a heuristic to solve this problem using three cascaded algorithms. The graph coloring problem was one of Karp's 21 NP-complete problems, and is also know as the problem of finding the chromatic number of a graph. Several other problems reduce to graph coloring including solving generalized Sudoku puzzles.
+
 ![Three Coloring.](threecoloring.jpg)
 
-The graph coloring problem aims at assigning colors to the nodes of a graph such that no two connected nodes have the same color. The graph coloring problem is NP-complete and one of the harder problems to solve. We present a heuristic to solve it using three cascaded algorithms. The graph coloring problem was one of Karp's 21 NP-complete problems, and is also know as the problem of finding the chromatic number of a graph. Several other problems reduce to graph coloring including solving generalized Sudoku puzzles.
+The problem of graph coloring can be solved using exact approaches like branch and cut and using heuristics like this work. Exact algorithms are not suitable for very large instances with more than 500 vertices. @malaguti2010survey surveys some of the algorithms that are exact and heuristic and find that the % gap for exact algorithms, even when allowed to run for 7200 seconds is quite large. This algorithm is able to solve several large instances, and finds the optimum chromatic number or at least a very close to optimum solution in a short amount of computational duration. When an exact algorithm is available and suitable, it is of course the preferred way as the solution can be provably optimal. But for very large graphs, this is often unsuitable because of the exponential complexity of NP-hard problems. Our heuristic can help in these cases. Results of our algorithm can be found on the [software page](https://github.com/shah314/graphcoloring).
 
-The problem of graph coloring can be solved using exact approaches like branch and cut and using heuristics like this work. Exact algorithms are not suitable for very large instances like more than 500 vertices. This paper [@malaguti2010survey] surveys some of the algorithms that are exact and heuristic and find that the %gap for exact algorithms, even when allowed to run for 7200 seconds is quite large. This algorithm is able to solve several large instances, and finds the optimum chromatic number or at least a very close to optimum solution in a short amount of computational duration. When an exact algorithm is available and suitable, it is of course the preferred way as the solution can be provably optimal. But for very large graphs, this is often unsuitable because of the exponential complexity of NP-hard problems. Our heuristic can help in these cases. Results of our algorithm can be found on our git page (<https://github.com/shah314/graphcoloring>).
-
-I ran the ColPack solver [@gebremedhin2010colpack] on some of the benchmark instances. The results are at the bottom of the git README and in the below table. To summarize, our method is as good or better on all the randomly chosen instances. On the queen9_9 and le450_5d instances, our method does better than ColPack. Also, our method is randomized and iterative. So it can be left running for a few hours to see if the coloring improves further (for large graphs with unknown chromatic numbers). The following table shows the results of the coloring. The run time for JCOL for 100 iterations is shown in the last column (milliseconds). This could be improved by decreasing the number of iterations and by disabling local search.
+The ColPack solver [@gebremedhin2010colpack] was run on some of the benchmark instances and the results are presented in [the software README](https://github.com/shah314/graphcoloring/blob/master/README.md) and in the table below. To summarize, this method is as good or better on all the randomly chosen instances. On the queen9_9 and le450_5d instances, this method out-performs ColPack. Also, this method is randomized and iterative so it can be left running for a few hours to see if the coloring improves further (for large graphs with unknown chromatic numbers). The following table shows the results of the coloring. The run time for JCOL for 100 iterations is shown in the last column (milliseconds). This could be improved by decreasing the number of iterations and by disabling local search.
 
 ||||||||
 |--- |--- |--- |--- |--- |--- |--- |
@@ -43,11 +43,11 @@ I ran the ColPack solver [@gebremedhin2010colpack] on some of the benchmark inst
 |queen9_9|15|15|15|11|30|218
 |myciel7|8|8|9|8|30|569
 |--- |--- |--- |--- |--- |--- |--- |
-|GM*|19.55|19.15|19.88|17.43| | 
+|GM*|19.55|19.15|19.88|17.43| |
 
 *GM=Geometric Mean
 
-This Java code uses the DSATUR [@brelaz1979new] heuristics along with iterated greedy heuristics [@culberson1992iterated] to color a graph. The DSATUR heuristic orders the nodes of a graph in non-increasing order of the degree of saturation. The degree of saturation is the number of colors found in the adjacency list of a node. The iterated greedy heuristics perform randomized ordering of the vertices to color them in that order. By randomizing this process, improvement can be found in successive iterations. The algorithm then uses min-conflicts local search to improve the coloring. The method is quite successful in finding good colorings of the majority of the publicly available data sets. Results can be found on the git page.
+This software uses the DSATUR [@brelaz1979new] heuristics along with iterated greedy heuristics [@culberson1992iterated] to color a graph. The DSATUR heuristic orders the nodes of a graph in non-increasing order of the degree of saturation. The degree of saturation is the number of colors found in the adjacency list of a node. The iterated greedy heuristics perform randomized ordering of the vertices to color them in that order. By randomizing this process, improvement can be found in successive iterations. The algorithm then uses min-conflicts local search to improve the coloring. The method is quite successful in finding good colorings of the majority of the publicly available data sets. Results can be found on the [software repository page](https://github.com/shah314/graphcoloring).
 
 The method uses the following steps:
 
@@ -59,10 +59,8 @@ The method uses the following steps:
 6) Improve the coloring using min-conflicts local search
 7) Report the coloring
 
-The Java code and a description are available here: <https://github.com/shah314/graphcoloring>. 
-
-The problem instances are available here: 
-<https://mat.tepper.cmu.edu/COLOR/instances.html> and 
+The problem instances are available here:
+<https://mat.tepper.cmu.edu/COLOR/instances.html> and
 <http://sites.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm>.
 
 # References
