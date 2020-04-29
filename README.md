@@ -204,3 +204,13 @@ The following table shows the results and the time it takes for JCOL (100 iterat
 |miles750|32|31|32|31|31|276
 |queen9_9|15|15|15|11|30|218
 |myciel7|8|8|9|8|30|569
+
+## References
+
+[1] Brélaz, D. (1979). New methods to color the vertices of a graph. Communications of the ACM, 22(4), 251–256. doi:10.1145/359094.359101
+
+[2] Culberson, J. (1992). Iterated greedy graph coloring and the difficulty landscape. doi:10.7939/R3M32NH6Q
+
+[3] Gebremedhin, A., Nguyen, D., Patwary, M., & Pothen, A. (2010). ColPack: Software for graph coloring and related problems in scientific computing. Submitted to ACM TOMS. doi:10.1145/2513109.2513110
+
+[4] Malaguti, E., & Toth, P. (2010). A survey on vertex coloring problems. International transactions in operational research, 17(1), 1–34. doi:10.1111/j.1475-3995.2009.00696.x
