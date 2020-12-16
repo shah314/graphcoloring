@@ -6,7 +6,7 @@
 
 ![Three Coloring](threecoloring.jpg)
 
-Implementation of the DSatur[1] heuristics for graph coloring in Java. The algorithm is created with tha aim of obtaining the best coloring, irrespective of run time. If you need to speed up the algorithm, consider not using local search. Also, if you need help with this, please open an issue.
+Implementation of the three heuristic algorithms including DSatur[1], Iterated Greedy [2] and min-conflicts local search in a mixed strategy (randomized) for graph coloring in Java. The algorithm is created with tha aim of obtaining the best coloring, irrespective of run time. If you need to speed up the algorithm, consider not using local search. Also, if you need help with this, please open an issue.
 
 The heuristic follows the following steps:
 
